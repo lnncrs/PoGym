@@ -1,0 +1,165 @@
+"C:\Program Files\Miniconda\python.exe" C:/Users/lenin/Documents/Projects/python/crawlers/gamepress/import_ggdata.py
+step #1 collecting moves...
+collected 124 moves
+
+step #2 collecting pokemons...
+collected 151 pokemons
+
+step #3 processing individual data
+processing #1 Bulbasaur (https://pokemongo.gamepress.gg//pokemon/1)
+processing #2 Ivysaur (https://pokemongo.gamepress.gg//pokemon/2)
+processing #3 Venusaur (https://pokemongo.gamepress.gg//pokemon/3)
+processing #4 Charmander (https://pokemongo.gamepress.gg//pokemon/4)
+processing #5 Charmeleon (https://pokemongo.gamepress.gg//pokemon/5)
+
+step #4 output (copy everything below this line on your fancy sgdb)
+==================== are you seeing this line? ====================
+Normal
+Fighting
+Flying
+Poison
+Ground
+Rock
+Bug
+Ghost
+Steel
+Fire
+Water
+Grass
+Electric
+Psychic
+Ice
+Dragon
+Dark
+Fairy
+['Splash', 'Quick Move', 'Water', '0', '1.23', '0.00', '0.00', '0']
+['Fury Cutter', 'Quick Move', 'Bug', '3', '0.40', '15.00', '7.50', '0']
+['Low Kick', 'Quick Move', 'Fighting', '5', '0.60', '11.67', '8.33', '0']
+['Bug Bite', 'Quick Move', 'Bug', '5', '0.45', '15.56', '11.11', '0']
+['Lick', 'Quick Move', 'Ghost', '5', '0.50', '12.00', '10.00', '0']
+['Thunder Shock', 'Quick Move', 'Electric', '5', '0.60', '13.33', '8.33', '0']
+['Dragon Breath', 'Quick Move', 'Dragon', '6', '0.50', '14.00', '12.00', '0']
+['Bite', 'Quick Move', 'Dark', '6', '0.50', '14.00', '12.00', '0']
+['Karate Chop', 'Quick Move', 'Fighting', '6', '0.80', '10.00', '7.50', '0']
+['Poison Sting', 'Quick Move', 'Poison', '6', '0.58', '13.91', '10.43', '0']
+['Scratch', 'Quick Move', 'Normal', '6', '0.50', '14.00', '12.00', '0']
+['Mud Shot', 'Quick Move', 'Ground', '6', '0.55', '12.73', '10.91', '0']
+['Water Gun', 'Quick Move', 'Water', '6', '0.50', '14.00', '12.00', '0']
+['Spark', 'Quick Move', 'Electric', '7', '0.70', '11.43', '10.00', '0']
+['Sucker Punch', 'Quick Move', 'Dark', '7', '0.70', '12.86', '10.00', '0']
+['Pound', 'Quick Move', 'Normal', '7', '0.54', '12.96', '12.96', '0']
+['Vine Whip', 'Quick Move', 'Grass', '7', '0.65', '10.77', '10.77', '0']
+['Psycho Cut', 'Quick Move', 'Psychic', '7', '0.57', '12.28', '12.28', '0']
+['Metal Claw', 'Quick Move', 'Steel', '8', '0.63', '11.11', '12.70', '0']
+['Frost Breath', 'Quick Move', 'Ice', '9', '0.81', '8.64', '11.11', '0']
+['Wing Attack', 'Quick Move', 'Flying', '9', '0.75', '9.33', '12.00', '0']
+['Quick Attack', 'Quick Move', 'Normal', '10', '1.33', '9.02', '7.52', '0']
+['Ember', 'Quick Move', 'Fire', '10', '1.05', '9.52', '9.52', '0']
+['Peck', 'Quick Move', 'Flying', '10', '1.15', '8.70', '8.70', '0']
+['Fire Fang', 'Quick Move', 'Fire', '10', '0.84', '9.52', '11.90', '0']
+['Bullet Punch', 'Quick Move', 'Steel', '10', '1.20', '8.33', '8.33', '0']
+['Acid', 'Quick Move', 'Poison', '10', '1.05', '9.52', '9.52', '0']
+['Shadow Claw', 'Quick Move', 'Ghost', '11', '0.95', '8.42', '11.58', '0']
+['Zen Headbutt', 'Quick Move', 'Psychic', '12', '1.05', '8.57', '11.43', '0']
+['Feint Attack', 'Quick Move', 'Dark', '12', '1.04', '9.62', '11.54', '0']
+['Poison Jab', 'Quick Move', 'Poison', '12', '1.05', '9.52', '11.43', '0']
+['Rock Throw', 'Quick Move', 'Rock', '12', '1.36', '11.03', '8.82', '0']
+['Tackle', 'Quick Move', 'Normal', '12', '1.10', '9.09', '10.91', '0']
+['Cut', 'Quick Move', 'Normal', '12', '1.13', '8.85', '10.62', '0']
+['Mud Slap', 'Quick Move', 'Ground', '15', '1.35', '8.89', '11.11', '0']
+['Steel Wing', 'Quick Move', 'Steel', '15', '1.33', '9.02', '11.28', '0']
+['Razor Leaf', 'Quick Move', 'Grass', '15', '1.45', '8.28', '10.34', '0']
+['Rock Smash', 'Quick Move', 'Fighting', '15', '1.41', '8.51', '10.64', '0']
+['Confusion', 'Quick Move', 'Psychic', '15', '1.51', '9.27', '9.93', '0']
+['Struggle', 'Charge Move', 'Normal', '15', '1.70', '0.00', '8.85', '5']
+['Ice Shard', 'Quick Move', 'Ice', '15', '1.40', '8.57', '10.71', '0']
+['Twister', 'Charge Move', 'Dragon', '25', '2.70', '0.00', '9.26', '5']
+['Aqua Jet', 'Charge Move', 'Water', '25', '2.35', '0.00', '10.64', '5']
+['Vice Grip', 'Charge Move', 'Normal', '25', '2.10', '0.00', '11.90', '5']
+['Bubble', 'Quick Move', 'Water', '25', '2.30', '10.87', '10.87', '0']
+['Draining Kiss', 'Charge Move', 'Fairy', '25', '2.80', '0.00', '8.93', '5']
+['Horn Attack', 'Charge Move', 'Normal', '25', '2.20', '0.00', '11.36', '4']
+['Poison Fang', 'Charge Move', 'Poison', '25', '2.40', '0.00', '10.42', '5']
+['Wrap', 'Charge Move', 'Normal', '25', '4.00', '0.00', '6.25', '5']
+['Icy Wind', 'Charge Move', 'Ice', '25', '3.80', '0.00', '6.58', '5']
+['Disarming Voice', 'Charge Move', 'Fairy', '25', '3.90', '0.00', '6.41', '5']
+['Brine', 'Charge Move', 'Water', '25', '2.40', '0.00', '10.42', '4']
+['Bone Club', 'Charge Move', 'Ground', '25', '1.60', '0.00', '15.63', '4']
+['Cross Poison', 'Charge Move', 'Poison', '25', '1.50', '0.00', '16.67', '4']
+['Flame Charge', 'Charge Move', 'Fire', '25', '3.10', '0.00', '8.06', '5']
+['Brick Break', 'Charge Move', 'Fighting', '30', '1.60', '0.00', '18.75', '3']
+['Low Sweep', 'Charge Move', 'Fighting', '30', '2.25', '0.00', '13.33', '4']
+['Submission', 'Charge Move', 'Fighting', '30', '2.10', '0.00', '14.29', '3']
+['Ominous Wind', 'Charge Move', 'Ghost', '30', '3.10', '0.00', '9.68', '4']
+['Bubble Beam', 'Charge Move', 'Water', '30', '2.90', '0.00', '10.34', '4']
+['Magnet Bomb', 'Charge Move', 'Steel', '30', '2.80', '0.00', '10.71', '4']
+['Swift', 'Charge Move', 'Normal', '30', '3.00', '0.00', '10.00', '4']
+['Flame Burst', 'Charge Move', 'Fire', '30', '2.10', '0.00', '14.29', '4']
+['Aerial Ace', 'Charge Move', 'Flying', '30', '2.90', '0.00', '10.34', '4']
+['Stomp', 'Charge Move', 'Normal', '30', '2.10', '0.00', '14.29', '4']
+['Air Cutter', 'Charge Move', 'Flying', '30', '3.30', '0.00', '9.09', '4']
+['Mud Bomb', 'Charge Move', 'Ground', '30', '2.60', '0.00', '11.54', '4']
+['Sludge', 'Charge Move', 'Poison', '30', '2.60', '0.00', '11.54', '4']
+['Iron Head', 'Charge Move', 'Steel', '30', '2.00', '0.00', '15.00', '3']
+['Rock Tomb', 'Charge Move', 'Rock', '30', '3.40', '0.00', '8.82', '4']
+['Night Slash', 'Charge Move', 'Dark', '30', '2.70', '0.00', '11.11', '4']
+['Dragon Claw', 'Charge Move', 'Dragon', '35', '1.60', '0.00', '21.88', '2']
+['Hyper Fang', 'Charge Move', 'Normal', '35', '2.10', '0.00', '16.67', '3']
+['Water Pulse', 'Charge Move', 'Water', '35', '3.30', '0.00', '10.61', '4']
+['Bulldoze', 'Charge Move', 'Ground', '35', '3.40', '0.00', '10.29', '4']
+['X-Scissor', 'Charge Move', 'Bug', '35', '2.10', '0.00', '16.67', '3']
+['Ancient Power', 'Charge Move', 'Rock', '35', '3.60', '0.00', '9.72', '4']
+['Discharge', 'Charge Move', 'Electric', '35', '2.50', '0.00', '14.00', '3']
+['Psybeam', 'Charge Move', 'Psychic', '40', '3.80', '0.00', '10.53', '4']
+['Fire Punch', 'Charge Move', 'Fire', '40', '2.80', '0.00', '14.29', '3']
+['Seed Bomb', 'Charge Move', 'Grass', '40', '2.40', '0.00', '16.67', '3']
+['Psyshock', 'Charge Move', 'Psychic', '40', '2.70', '0.00', '14.81', '3']
+['Flame Wheel', 'Charge Move', 'Fire', '40', '4.60', '0.00', '8.70', '4']
+['Body Slam', 'Charge Move', 'Normal', '40', '1.56', '0.00', '25.64', '2']
+['Drill Peck', 'Charge Move', 'Flying', '40', '2.70', '0.00', '14.81', '3']
+['Thunder Punch', 'Charge Move', 'Electric', '40', '2.40', '0.00', '16.67', '3']
+['Power Gem', 'Charge Move', 'Rock', '40', '2.90', '0.00', '13.79', '3']
+['Dark Pulse', 'Charge Move', 'Dark', '45', '3.50', '0.00', '12.86', '3']
+['Aqua Tail', 'Charge Move', 'Water', '45', '2.35', '0.00', '19.15', '2']
+['Shadow Ball', 'Charge Move', 'Ghost', '45', '3.08', '0.00', '14.61', '3']
+['Ice Punch', 'Charge Move', 'Ice', '45', '3.50', '0.00', '12.86', '3']
+['Signal Beam', 'Charge Move', 'Bug', '45', '3.10', '0.00', '14.52', '3']
+['Drill Run', 'Charge Move', 'Ground', '50', '3.40', '0.00', '14.71', '3']
+['Rock Slide', 'Charge Move', 'Rock', '50', '3.20', '0.00', '15.63', '3']
+['Scald', 'Charge Move', 'Water', '55', '4.00', '0.00', '13.75', '3']
+['Psychic', 'Charge Move', 'Psychic', '55', '2.80', '0.00', '19.64', '2']
+['Dazzling Gleam', 'Charge Move', 'Fairy', '55', '4.20', '0.00', '13.10', '3']
+['Play Rough', 'Charge Move', 'Fairy', '55', '2.90', '0.00', '18.97', '2']
+['Leaf Blade', 'Charge Move', 'Grass', '55', '2.80', '0.00', '19.64', '2']
+['Flamethrower', 'Charge Move', 'Fire', '55', '2.90', '0.00', '18.97', '2']
+['Thunderbolt', 'Charge Move', 'Electric', '55', '2.70', '0.00', '20.37', '2']
+['Sludge Bomb', 'Charge Move', 'Poison', '55', '2.60', '0.00', '21.15', '2']
+['Cross Chop', 'Charge Move', 'Fighting', '60', '2.00', '0.00', '30.00', '1']
+['Flash Cannon', 'Charge Move', 'Steel', '60', '3.90', '0.00', '15.38', '3']
+['Gunk Shot', 'Charge Move', 'Poison', '65', '3.00', '0.00', '21.67', '1']
+['Petal Blizzard', 'Charge Move', 'Grass', '65', '3.20', '0.00', '20.31', '2']
+['Dragon Pulse', 'Charge Move', 'Dragon', '65', '3.60', '0.00', '18.06', '2']
+['Ice Beam', 'Charge Move', 'Ice', '65', '3.65', '0.00', '17.81', '2']
+['Sludge Wave', 'Charge Move', 'Poison', '70', '3.40', '0.00', '20.59', '1']
+['Dig', 'Charge Move', 'Ground', '70', '5.80', '0.00', '12.07', '3']
+['Power Whip', 'Charge Move', 'Grass', '70', '2.80', '0.00', '25.00', '1']
+['Bug Buzz', 'Charge Move', 'Bug', '75', '4.25', '0.00', '17.65', '2']
+['Hurricane', 'Charge Move', 'Flying', '80', '3.20', '0.00', '25.00', '1']
+['Heat Wave', 'Charge Move', 'Fire', '80', '3.80', '0.00', '21.05', '1']
+['Megahorn', 'Charge Move', 'Bug', '80', '3.20', '0.00', '25.00', '1']
+['Stone Edge', 'Charge Move', 'Rock', '80', '3.10', '0.00', '25.81', '1']
+['Moonblast', 'Charge Move', 'Fairy', '85', '4.10', '0.00', '20.73', '1']
+['Hydro Pump', 'Charge Move', 'Water', '90', '3.80', '0.00', '23.68', '1']
+['Fire Blast', 'Charge Move', 'Fire', '100', '4.10', '0.00', '24.39', '1']
+['Blizzard', 'Charge Move', 'Ice', '100', '3.90', '0.00', '25.64', '1']
+['Thunder', 'Charge Move', 'Electric', '100', '4.30', '0.00', '23.26', '1']
+['Earthquake', 'Charge Move', 'Ground', '100', '4.20', '0.00', '23.81', '1']
+['Solar Beam', 'Charge Move', 'Grass', '120', '4.90', '0.00', '24.49', '1']
+['Hyper Beam', 'Charge Move', 'Normal', '120', '5.00', '0.00', '24.00', '1']
+['1', 'Bulbasaur', '/sites/default/files/styles/pokemon_small/public/2016-08/1_0.png', '/sites/default/files/styles/240w/public/2016-08/1_0.png', '/pokemon/1', '0.70', '6.90', '1071', '126', '126', '90', ['Grass', 'Poison'], [['Tackle', 0], ['Vine Whip', 0]], [['Power Whip', 0], ['Seed Bomb', 0], ['Sludge Bomb', 0]]]
+['2', 'Ivysaur', '/sites/default/files/styles/pokemon_small/public/2016-08/2.png', '/sites/default/files/styles/240w/public/2016-08/2.png', '/pokemon/2', '1.00', '13.00', '1632', '156', '158', '120', ['Grass', 'Poison'], [['Razor Leaf', 0], ['Vine Whip', 0]], [['Power Whip', 0], ['Sludge Bomb', 0], ['Solar Beam', 0]]]
+['3', 'Venusaur', '/sites/default/files/styles/pokemon_small/public/2016-07/3.png', '/sites/default/files/styles/240w/public/2016-07/3.png', '/pokemon/3', '2.00', '100.00', '2580', '198', '200', '160', ['Grass', 'Poison'], [['Razor Leaf', 0], ['Vine Whip', 0]], [['Petal Blizzard', 0], ['Sludge Bomb', 0], ['Solar Beam', 0]]]
+['4', 'Charmander', '/sites/default/files/styles/pokemon_small/public/2016-07/4.png', '/sites/default/files/styles/240w/public/2016-07/4.png', '/pokemon/4', '0.60', '8.50', '955', '128', '108', '78', ['Fire'], [['Ember', 0], ['Scratch', 0]], [['Flame Burst', 0], ['Flamethrower', 0], ['Flame Charge', 0]]]
+['5', 'Charmeleon', '/sites/default/files/styles/pokemon_small/public/2016-07/5.png', '/sites/default/files/styles/240w/public/2016-07/5.png', '/pokemon/5', '1.10', '19.00', '1557', '160', '140', '116', ['Fire'], [['Ember', 0], ['Scratch', 0]], [['Fire Punch', 0], ['Flame Burst', 0], ['Flamethrower', 0]]]
+
+Process finished with exit code 0
