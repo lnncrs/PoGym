@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f61091b315b94b12b9c3e628402c9396" Name="Diagram1">
+        <EntityTypeShape EntityType="pogymModel.attacks" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="pogymModel.attacks_types" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="pogymModel.pokemons" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pogymModel.pokemons_attacks" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pogymModel.pokemons_types" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pogymModel.types" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pogymModel.types_types" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <AssociationConnector Association="pogymModel.FK_attacks_attacks_types" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_attacks_types" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_pokemons_attacks_attacks" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_pokemons_attacks_pokemons" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_pokemons_pokemons" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_pokemons_types_pokemons" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_pokemons_types_types" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_types_types_types" ManuallyRouted="false" />
+        <AssociationConnector Association="pogymModel.FK_types_types_types1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
