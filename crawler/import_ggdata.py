@@ -11,7 +11,7 @@ types_b = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'G
 types_a = ['Quick Move', 'Charge Move']
 
 # test limit (limit step #3)
-limit = 5
+limit = 3
 
 # ====================
 # step #1 generate moves list
@@ -24,6 +24,7 @@ molist = 'https://pokemongo.gamepress.gg/pokemon-moves'
 
 # moves list
 moves = list()
+moves_n = list()
 
 # make the soup
 html_l = urlopen(molist)
@@ -44,20 +45,105 @@ for row in table_body.findAll('tr'):
     cool = cols[2].text.strip()
     energy = cols[3].text.strip()
     dps = cols[4].text.strip()
-    charge = '0'
+    # charge = '0'
 
     # if is a charge move (and is not a Magikarp)
     if energy == '0.00' and damage != '0':
         bars = cols[0].findAll('img')
         if bars is not None:
             type_m = 'Charge Move'
-            charge = bars[0]['alt'].replace('Energy','').strip()
+            charge = bars[0]['alt'].replace('Energy', '').strip()
 
-    moves.append([name, type_m, type_t, damage, cool, energy, dps, charge])
+    moves.append([name, type_m, type_t, damage, cool, dps])
+    moves_n.append(name)
 
     # break
 
 print('collected ' + str(len(moves)) + ' moves')
+print(moves)
+print(moves_n)
+
+# ====================
+# step #1.1 generate quick moves details
+# ====================
+
+print('\nstep #1.1 collecting quick moves details...')
+
+# landing page
+molist = 'https://pokemongo.gamepress.gg/quick-moves'
+
+# moves list
+moves_q = list()
+
+# make the soup
+html_l = urlopen(molist)
+soup_l = BeautifulSoup(html_l, 'html.parser')
+
+# find the entry point
+table = soup_l.find('table', {'id': 'sort-table'})
+table_body = table.find('tbody')
+
+# iterate the table
+for row in table_body.findAll('tr'):
+
+    cols = row.findAll('td')
+    name = cols[0].a.text.strip()
+    type_m = 'Quick Move'
+    energyps = cols[3].text.strip()
+    energypu = cols[4].text.strip()
+    defensive = cols[5].text.strip()
+
+    moves_q.append([name, type_m, energyps, energypu, defensive])
+
+    # break
+
+print('collected ' + str(len(moves_q)) + ' moves')
+print(moves_q)
+
+# ====================
+# step #1.2 generate charge moves details
+# ====================
+
+print('\nstep #1.2 collecting charge moves details...')
+
+# landing page
+molist = 'https://pokemongo.gamepress.gg/charge-moves'
+
+# moves list
+moves_c = list()
+
+# make the soup
+html_l = urlopen(molist)
+soup_l = BeautifulSoup(html_l, 'html.parser')
+
+# find the entry point
+table = soup_l.find('table', {'id': 'sort-table'})
+table_body = table.find('tbody')
+
+# iterate the table
+for row in table_body.findAll('tr'):
+
+    cols = row.findAll('td')
+    name = cols[0].a.text.strip()
+    type_m = 'Charge Move'
+    dodge = cols[2].text.strip()
+    critical = cols[3].text.strip()
+    charge = '0'
+
+    # if is a charge move (and is not a Magikarp)
+    # if energy == '0.00' and damage != '0':
+    bars = cols[0].findAll('img')
+    if bars is not None:
+        charge = bars[0]['alt'].replace('Energy','').strip()
+
+    moves_c.append([name, type_m, dodge, critical, charge])
+
+    # break
+
+print('collected ' + str(len(moves_c)) + ' moves')
+print(moves_c)
+
+exit()
 
 # ====================
 # step #2 generate pokemon list
@@ -182,6 +268,7 @@ for poke in pokes:
 print('\nstep #4 output (copy everything below this line on your fancy sgdb)')
 print('==================== are you seeing this line? ====================')
 
+
 def v(x):
     if x == 1:
         return ''
@@ -207,14 +294,27 @@ for type_a in types_a:
 print(';\n')
 
 i = 1
-print('INSERT INTO [attacks] ([attack_id],[name],[attack_type_id],[type_id],[damage],[damageps],[move_cooldown],[energyps],[charge]) VALUES ')
+print('INSERT INTO [attacks] ([attack_id],[name],[attack_type_id],[type_id],[damage],[move_cooldown],[damageps]) VALUES ')
 for move in moves:
-    print('{0}({1},\'{2}\',{3},{4},{5},{6},{7},{8},{9})'.format(v(i), i, move[0], types_a.index(move[1])+1, types_b.index(move[2])+1, move[3], move[6], move[4], move[5], move[7]))
+    print('{0}({1},\'{2}\',{3},{4},{5},{6},{7})'.format(v(i), i, move[0], types_a.index(move[1])+1, types_b.index(move[2])+1, move[3], move[4], move[5]))
     i += 1
 print(';\n')
 
 i = 1
+print('INSERT INTO [attacks_quick] ([attack_id],[energyps],[energypu],[defensive_damageps]) VALUES')
+for move in moves_q:
+    print('{0}({1},{2},{3},{4})'.format(v(i), moves_n.index(moves_q[0])+1, move[2], move[3], move[4]))
+    i += 1
+print(';\n')
 
+i = 1
+print('INSERT INTO [dbo].[attacks_charge] ([attack_id],[dodge],[critical],[charge]) VALUES')
+for move in moves_c:
+    print('{0}({1},{2},{3},{4})'.format(v(i), moves_n.index(moves_c[0])+1, move[2], move[3], move[4]))
+    i += 1
+print(';\n')
+
+i = 1
 for poke in pokecards:
     print('INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES ')
     print('({1},\'{2}\',\'{3}\',\'{4}\',\'{5}\',{6},{7},{8},{9},{10},{11})'.format(v(i), poke[0], poke[1], poke[2], poke[3], poke[4], poke[5], poke[6], poke[7], poke[8], poke[9], poke[10]))

@@ -21,21 +21,18 @@ namespace pogym.Models
         }
     
         public int attack_id { get; set; }
-        public string name { get; set; }
         public int attack_type_id { get; set; }
+        public string name { get; set; }
         public int type_id { get; set; }
         public decimal damage { get; set; }
         public Nullable<decimal> damage_stab { get; set; }
         public decimal damageps { get; set; }
         public Nullable<decimal> damageps_stab { get; set; }
         public decimal move_cooldown { get; set; }
-        public Nullable<decimal> defensive_damageps { get; set; }
-        public Nullable<int> damage_window { get; set; }
-        public Nullable<int> critical { get; set; }
-        public Nullable<decimal> energyps { get; set; }
-        public Nullable<int> charge { get; set; }
     
         public virtual attacks_types attacks_types { get; set; }
+        public virtual attacks_charge attacks_charge { get; set; }
+        public virtual attacks_quick attacks_quick { get; set; }
         public virtual types types { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<pokemons_attacks> pokemons_attacks { get; set; }

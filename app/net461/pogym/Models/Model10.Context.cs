@@ -25,12 +25,16 @@ namespace pogym.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<attacks> attacks { get; set; }
         public virtual DbSet<attacks_types> attacks_types { get; set; }
         public virtual DbSet<pokemons> pokemons { get; set; }
         public virtual DbSet<pokemons_attacks> pokemons_attacks { get; set; }
         public virtual DbSet<pokemons_types> pokemons_types { get; set; }
         public virtual DbSet<types> types { get; set; }
         public virtual DbSet<types_types> types_types { get; set; }
+        public virtual DbSet<attacks> attacks { get; set; }
+        public virtual DbSet<attacks_charge> attacks_charge { get; set; }
+        public virtual DbSet<attacks_quick> attacks_quick { get; set; }
+
+        public System.Data.Entity.DbSet<pogym.Models.Pokemon> Pokemons { get; set; }
     }
 }

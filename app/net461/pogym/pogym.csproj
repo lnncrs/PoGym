@@ -139,21 +139,34 @@
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\pokemonsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\attacks.cs">
       <DependentUpon>Model10.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\attacks_charge.cs">
+      <DependentUpon>Model10.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\attacks_quick.cs">
+      <DependentUpon>Model10.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\attacks_types.cs">
       <DependentUpon>Model10.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataModel.cs" />
     <Compile Include="Models\Model10.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -194,6 +207,14 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Battle.cshtml" />
+    <Content Include="Views\pokemons\Create.cshtml" />
+    <Content Include="Views\pokemons\Delete.cshtml" />
+    <Content Include="Views\pokemons\Details.cshtml" />
+    <Content Include="Views\pokemons\Edit.cshtml" />
+    <Content Include="Views\pokemons\Index.cshtml" />
+    <Content Include="Views\Home\FavPokemon.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

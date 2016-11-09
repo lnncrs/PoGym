@@ -1,0 +1,93 @@
+﻿@model IEnumerable<pogym.Models.pokemons>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.icon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.url)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.height_avg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.weight_avg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.combatpower_max)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.attack_base)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.defense_base)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.stamina_base)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pokemons2.name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.icon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.url)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.height_avg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.weight_avg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.combatpower_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.attack_base)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.defense_base)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.stamina_base)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pokemons2.name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.pokemon_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.pokemon_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.pokemon_id })
+        </td>
+    </tr>
+}
+
+</table>

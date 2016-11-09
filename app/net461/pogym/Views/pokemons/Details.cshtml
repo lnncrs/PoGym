@@ -1,0 +1,106 @@
+﻿@model pogym.Models.pokemons
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>pokemons</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.icon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.icon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.height_avg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.height_avg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weight_avg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weight_avg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.combatpower_max)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.combatpower_max)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.attack_base)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.attack_base)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.defense_base)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.defense_base)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stamina_base)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stamina_base)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pokemons2.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pokemons2.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.pokemon_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
