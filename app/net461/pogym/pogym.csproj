@@ -56,6 +56,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -130,10 +134,6 @@
     <Content Include="Models\Model10.edmx.diagram">
       <DependentUpon>Model10.edmx</DependentUpon>
     </Content>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PokeController.cs" />
     <Compile Include="Controllers\pokemonsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -206,15 +206,15 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Battle.cshtml" />
+    <Content Include="Views\Poke\Index.cshtml" />
+    <Content Include="Views\Poke\Battle.cshtml" />
     <Content Include="Views\pokemons\Create.cshtml" />
     <Content Include="Views\pokemons\Delete.cshtml" />
     <Content Include="Views\pokemons\Details.cshtml" />
     <Content Include="Views\pokemons\Edit.cshtml" />
     <Content Include="Views\pokemons\Index.cshtml" />
-    <Content Include="Views\Home\FavPokemon.cshtml" />
-    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Poke\Create.cshtml" />
+    <Content Include="Views\Poke\ListPokemon.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

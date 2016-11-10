@@ -1,0 +1,97 @@
+﻿@model pogym.Models.CreatePokemonViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Pokemon</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.SourceForm)
+        <div class="form-group">
+            @Html.LabelFor(model => model.PokemonID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PokemonID", null, htmlAttributes: new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.QuickAttackID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("QuickAttackID", null, htmlAttributes: new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ChargeAttackID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ChargeAttackID", null, htmlAttributes: new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "ListPokemon", new { at = Model.SourceForm })
+</div>
+
+@section Scripts {
+
+<script type="text/javascript">
+        $(document).ready(function () {
+
+            //Dropdownlist Selectedchange event
+            $("#PokemonID").change(function () {
+
+                $("#QuickAttackID").empty();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("JsonQuickAttacks")', // we are calling json method
+                    dataType: 'json',
+                    data: { id: $("#PokemonID").val(), at:1 },
+                    // here we are get value of selected country and passing same value as inputto json method GetStates.
+                    success: function (states) {
+                        // states contains the JSON formatted list
+                        // of states passed from the controller
+                        $.each(states, function (i, state) {
+                            $("#QuickAttackID").append('<option value="' + state.Value + '">' + state.Text + '</option>');
+                            // here we are adding option for States
+                        });
+                    },
+                    error: function (ex) {
+                        alert('Falha ao recuperar lista.' + ex);
+                    }
+                });
+
+                $("#ChargeAttackID").empty();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("JsonQuickAttacks")', // we are calling json method
+                    dataType: 'json',
+                    data: { id: $("#PokemonID").val(), at: 2 },
+                    // here we are get value of selected country and passing same value as inputto json method GetStates.
+                    success: function (states) {
+                        // states contains the JSON formatted list
+                        // of states passed from the controller
+                        $.each(states, function (i, state) {
+                            $("#ChargeAttackID").append('<option value="' + state.Value + '">' + state.Text + '</option>');
+                            // here we are adding option for States
+                        });
+                    },
+                    error: function (ex) {
+                        alert('Falha ao recuperar lista.' + ex);
+                    }
+                });
+
+                return false;
+            });
+
+        });
+</script>
+
+}

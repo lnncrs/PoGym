@@ -34,7 +34,5 @@ namespace pogym.Models
         public virtual DbSet<attacks> attacks { get; set; }
         public virtual DbSet<attacks_charge> attacks_charge { get; set; }
         public virtual DbSet<attacks_quick> attacks_quick { get; set; }
-
-        public System.Data.Entity.DbSet<pogym.Models.Pokemon> Pokemons { get; set; }
     }
 }

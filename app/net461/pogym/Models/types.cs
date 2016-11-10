@@ -25,6 +25,7 @@ namespace pogym.Models
     
         public int type_id { get; set; }
         public string type { get; set; }
+        public string icon { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<pokemons_types> pokemons_types { get; set; }

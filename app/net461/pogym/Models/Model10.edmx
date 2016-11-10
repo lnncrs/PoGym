@@ -84,6 +84,7 @@
           </Key>
           <Property Name="type_id" Type="int" Nullable="false" />
           <Property Name="type" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="icon" Type="nvarchar" MaxLength="400" />
         </EntityType>
         <EntityType Name="types_types">
           <Key>
@@ -353,6 +354,7 @@
           <NavigationProperty Name="types_types" Relationship="Self.FK_types_types_types" FromRole="types" ToRole="types_types" />
           <NavigationProperty Name="types_types1" Relationship="Self.FK_types_types_types1" FromRole="types" ToRole="types_types" />
           <NavigationProperty Name="attacks" Relationship="pogymModel.FK_attacks_types" FromRole="types" ToRole="attacks" />
+          <Property Name="icon" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="types_types">
           <Key>
@@ -653,6 +655,7 @@
           <EntitySetMapping Name="types">
             <EntityTypeMapping TypeName="pogymModel.types">
               <MappingFragment StoreEntitySet="types">
+                <ScalarProperty Name="icon" ColumnName="icon" />
                 <ScalarProperty Name="type_id" ColumnName="type_id" />
                 <ScalarProperty Name="type" ColumnName="type" />
               </MappingFragment>

@@ -1,0 +1,109 @@
+﻿@model pogym.Models.BattleCard
+
+@{
+    ViewBag.Title = "PoGym - Battle calculator for Pokémon GO";
+}
+
+<div class="col-md-4">
+    <div class="row text-center">
+        <h3><a href="~/Poke/ListPokemon?at=1">Favorite Pokémons</a></h3>
+    </div>
+    <!--
+    <div class="row vertical-align text-center space-row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-3">
+            <b>Pokemon</b>
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-9">
+                    <b>Moves</b>
+                </div>
+                <div class="col-md-3">
+                    <b>DPS</b>
+                </div>
+            </div>
+        </div>
+    </div>
+        -->
+    @foreach (var item in Model.FavPokes)
+    {
+        <div class="row vertical-align text-center space-row">
+            <div class="col-md-2">
+                <img src="@item.Poke.iconUrl" />
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <a href="@item.Poke.urlUrl" target="_blank">
+                        @item.Poke.name
+                    </a>
+                </div>
+                <div class="row">
+                    @foreach (var type in item.Poke.pokemons_types)
+                    {
+                        <img src="@type.types.iconUrl" />
+                    }
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-9">
+                        @item.QuickAttack.name
+                    </div>
+                    <div class="col-md-3">
+                        @item.QuickAttack.damageps
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        @item.ChargeAttack.name
+                    </div>
+                    <div class="col-md-3">
+                        @item.ChargeAttack.damageps
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div class="col-md-4">
+    <div class="row text-center">
+        <h3><a href="~/Poke/ListPokemon?at=2">Pokémons at Gym</a></h3>
+    </div>
+    <!--
+    <div class="row vertical-align text-center space-row">
+        <div class="col-md-2 col-md-offset-3">
+        </div>
+        <div class="col-md-3">
+            <b>Pokemon</b>
+        </div>
+    </div>
+        -->
+    @foreach (var item in Model.GymPokes)
+    {
+        <div class="row vertical-align text-center space-row">
+            <div class="col-md-2 col-md-offset-3">
+                <img src="@item.Poke.iconUrl" />
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <a href="@item.Poke.urlUrl" target="_blank">
+                        @item.Poke.name
+                    </a>
+                </div>
+                <div class="row">
+                    @foreach (var type in item.Poke.pokemons_types)
+                    {
+                        <img src="@type.types.iconUrl" />
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div class="col-md-4">
+    <div class="row text-center">
+        <h3>Best attack order</h3>
+    </div>
+</div>
