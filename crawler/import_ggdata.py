@@ -11,7 +11,7 @@ types_b = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'G
 types_a = ['Quick Move', 'Charge Move']
 
 # test limit (limit step #3)
-limit = 3
+limit = 9
 
 # ====================
 # step #1 generate moves list
@@ -60,8 +60,8 @@ for row in table_body.findAll('tr'):
     # break
 
 print('collected ' + str(len(moves)) + ' moves')
-print(moves)
-print(moves_n)
+# print(moves)
+# print(moves_n)
 
 # ====================
 # step #1.1 generate quick moves details
@@ -98,7 +98,7 @@ for row in table_body.findAll('tr'):
     # break
 
 print('collected ' + str(len(moves_q)) + ' moves')
-print(moves_q)
+# print(moves_q)
 
 # ====================
 # step #1.2 generate charge moves details
@@ -141,9 +141,9 @@ for row in table_body.findAll('tr'):
     # break
 
 print('collected ' + str(len(moves_c)) + ' moves')
-print(moves_c)
+# print(moves_c)
 
-exit()
+# exit()
 
 # ====================
 # step #2 generate pokemon list
@@ -174,8 +174,9 @@ for row in table_body.findAll('tr'):
     url = cols[2].a['href']
 
     icon = cols[1].img['src']
-    if icon.find('?') != -1:
-        icon = icon[:icon.find('?')]
+    if icon is not None:
+        if icon.find('?') != -1:
+            icon = icon[:icon.find('?')]
 
     maxcp = cols[3].text.strip()
     pokes.append([number, name, url, icon, maxcp])

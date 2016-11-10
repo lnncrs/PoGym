@@ -15,7 +15,15 @@ namespace pogym.Controllers
         public ActionResult Index()
         {
             ViewBag.polist = new SelectList(db.pokemons, "pokemon_id", "name");
-            return View();
+
+            if (TempData["BattleCard"] != null)
+            {
+                return View(TempData["BattleCard"]);
+            }
+            else
+            {
+                return View(new BattleCard());
+            }
         }
 
         public ActionResult Battle()
@@ -33,7 +41,7 @@ namespace pogym.Controllers
             List<Pokemon> polist = new List<Pokemon>();
 
             Pokemon po = new Pokemon();
-            po.Number = 1;
+            po.ID = 1;
             po.Name = "Bulbassaur";
 
             polist.Add(po);
