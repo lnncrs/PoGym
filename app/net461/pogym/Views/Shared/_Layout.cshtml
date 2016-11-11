@@ -9,6 +9,7 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
+
     @*
         <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -28,9 +29,9 @@
         </div>
     *@
 
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-sm-12 text-center">
                 <h1><a href="~/Poke">PoGym - Battle calculator for Pokémon GO</a></h1>
             </div>
         </div>
@@ -38,9 +39,11 @@
             @RenderBody()
         </div>
         <hr />
-        <footer>
-            <p>PoGym @DateTime.Now.Year</p>
-        </footer>
+        <div class="row">
+            <footer class="col-sm-12">
+                <p>PoGym @DateTime.Now.Year</p>
+            </footer>
+        </div>
     </div>
 
     <script src="~/Scripts/jquery-3.1.1.js"></script>

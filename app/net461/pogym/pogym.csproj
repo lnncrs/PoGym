@@ -207,7 +207,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Poke\Index.cshtml" />
-    <Content Include="Views\Poke\Battle.cshtml" />
     <Content Include="Views\pokemons\Create.cshtml" />
     <Content Include="Views\pokemons\Delete.cshtml" />
     <Content Include="Views\pokemons\Details.cshtml" />

@@ -108,16 +108,22 @@ namespace pogym.Models
     {
         [Display(Name = "Pokemon")]
         public string name;
+
         [Display(Name = "Height")]
         public decimal height_avg;
+
         [Display(Name = "Weight")]
         public decimal weight_avg;
+
         [Display(Name = "Max CP")]
         public int combatpower_max;
+
         [Display(Name = "Attack")]
         public int attack_base;
+
         [Display(Name = "Defense")]
         public int defense_base;
+
         [Display(Name = "Stamina")]
         public int stamina_base;
     }
