@@ -187,13 +187,13 @@ namespace pogym.Controllers
 
             if(at == null || at == 1)
             {
-                ViewBag.Title = "Favorite Pokémons";
+                ViewBag.Title = "Favorite Pokemons";
                 ViewBag.a = "1";
                 return View(bc.FavPokes.AsEnumerable());
             }
             else
             {
-                ViewBag.Title = "Pokémons at Gym";
+                ViewBag.Title = "Pokemons at Gym";
                 ViewBag.a = "2";
                 return View(bc.GymPokes.AsEnumerable());
             }

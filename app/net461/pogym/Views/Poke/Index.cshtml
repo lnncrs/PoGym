@@ -1,16 +1,43 @@
 ﻿@model pogym.Models.BattleCard
 
 @{
-    ViewBag.Title = "PoGym - Battle calculator for Pokémon GO";
+    ViewBag.Title = "PoGym - Battle calculator for Pokemon GO";
 }
 
 <div class="col-md-4">
     <div class="row text-center">
-        <h3><a href="~/Poke/ListPokemon?at=1">Favorite Pokémons</a></h3>
+        <h3><a href="~/Poke/ListPokemon?at=1">Favorite Pokemons</a></h3>
     </div>
+
+    <div class="row space-row">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-3">
+            <div class="row">
+                <b>Pokemon</b>
+            </div>
+        </div>
+        <div class="col-xs-7">
+            <div class="row">
+                <div class="col-xs-6">
+                    <b>Moves</b>
+                </div>
+                <div class="col-xs-2">
+                    <b>Type</b>
+                </div>
+                <div class="col-xs-2">
+                    <b>DMG</b>
+                </div>
+                <div class="col-xs-2">
+                    <b>DPS</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @foreach (var item in Model.FavPokes)
     {
-        <div class="row">
+        <div class="row space-row">
             <div class="col-xs-2">
                 <img src="@item.Poke.iconUrl" />
             </div>
@@ -29,18 +56,30 @@
             </div>
             <div class="col-xs-7">
                 <div class="row">
-                    <div class="col-xs-9">
+                    <div class="col-xs-6">
                         @item.QuickAttack.name
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-2">
+                        <img src="@item.QuickAttack.types.iconUrl" />
+                    </div>
+                    <div class="col-xs-2">
+                        @item.QuickAttack.damage
+                    </div>
+                    <div class="col-xs-2">
                         @item.QuickAttack.damageps
                     </div>
-                </div>
+                    </div>
                 <div class="row">
-                    <div class="col-xs-9">
+                    <div class="col-xs-6">
                         @item.ChargeAttack.name
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-2">
+                        <img src="@item.ChargeAttack.types.iconUrl" />
+                    </div>
+                    <div class="col-xs-2">
+                        @item.ChargeAttack.damage
+                    </div>
+                    <div class="col-xs-2">
                         @item.ChargeAttack.damageps
                     </div>
                 </div>
@@ -49,16 +88,27 @@
     }
 </div>
 <div class="col-md-4">
-    <div class="row">
-        <h3><a href="~/Poke/ListPokemon?at=2">Pokémons at Gym</a></h3>
+    <div class="row text-center">
+        <h3><a href="~/Poke/ListPokemon?at=2">Pokemons at Gym</a></h3>
     </div>
+
+    <div class="row space-row">
+        <div class="col-xs-2 col-xs-offset-4">
+        </div>
+        <div class="col-xs-3">
+            <div class="row">
+                <b>Pokemon</b>
+            </div>
+        </div>
+    </div>
+
     @foreach (var item in Model.GymPokes)
     {
-        <div class="row">
-            <div class="col-sm-2 col-sm-offset-3">
+        <div class="row space-row">
+            <div class="col-xs-2 col-xs-offset-4">
                 <img src="@item.Poke.iconUrl" />
             </div>
-            <div class="col-sm-3">
+            <div class="col-xs-3">
                 <div class="row">
                     <a href="@item.Poke.urlUrl" target="_blank">
                         @item.Poke.name
@@ -75,7 +125,7 @@
     }
 </div>
 <div class="col-md-4">
-    <div class="row">
+    <div class="row text-center">
         <h3>Best attack order</h3>
     </div>
 </div>
@@ -99,7 +149,6 @@
     </div>
 </div>
     -->
-
 <!--
 <div class="row vertical-align text-center space-row">
     <div class="col-sm-2 col-sm-offset-3">
