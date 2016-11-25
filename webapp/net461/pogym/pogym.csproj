@@ -150,7 +150,6 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\PokeController.cs" />
-    <Compile Include="Controllers\pokemonsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,11 +206,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Poke\Index.cshtml" />
-    <Content Include="Views\pokemons\Create.cshtml" />
-    <Content Include="Views\pokemons\Delete.cshtml" />
-    <Content Include="Views\pokemons\Details.cshtml" />
-    <Content Include="Views\pokemons\Edit.cshtml" />
-    <Content Include="Views\pokemons\Index.cshtml" />
     <Content Include="Views\Poke\Create.cshtml" />
     <Content Include="Views\Poke\ListPokemon.cshtml" />
     <None Include="Web.Debug.config">
