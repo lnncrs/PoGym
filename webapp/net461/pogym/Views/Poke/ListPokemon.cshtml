@@ -1,13 +1,16 @@
 ﻿@model IEnumerable<pogym.Models.Pokemon>
 
 <div class="col-md-12 text-center">
-        <h3>@ViewBag.Title</h3>
+    <h3>@ViewBag.Title</h3>
 </div>
+
 <div class="col-md-12">
     <p>
-        @Html.ActionLink("Create New", "Create", new { at = ViewBag.a })
+        <a href="~/Poke" class="btn btn-default">Back!</a>
+        @Html.ActionLink("Create New", "Create", new { at = ViewBag.a }, new { @class = "btn btn-primary" })
     </p>
 </div>
+
 <div class="col-md-12">
     <table class="table">
         <tr>
@@ -68,7 +71,7 @@
                     @Html.DisplayFor(modelItem => item.Poke.stamina_base)
                 </td>
                 <td>
-                    @Html.ActionLink("Delete", "Delete", new { guid = item.PokeGUID, at = ViewBag.a })
+                    @Html.ActionLink("Delete", "Delete", new { guid = item.PokeGUID, at = ViewBag.a }, new { @class = "btn btn-primary btn-sm" })
                 </td>
             </tr>
         }

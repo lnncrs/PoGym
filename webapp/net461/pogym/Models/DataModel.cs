@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.Core.Objects;
 
 namespace pogym.Models
 {
@@ -83,8 +84,91 @@ namespace pogym.Models
         [Key]
         public Guid PokeGUID { get; set; }
         public pokemons Poke { get; set; }
-        public attacks QuickAttack { get; set; }
-        public attacks ChargeAttack { get; set; }
+
+        public bool Used { get; set; }
+        public int Match { get; set; }
+
+        private attacks quick;
+        public attacks QuickAttack
+        {
+            get
+            {
+                return quick;
+            }
+            set
+            {
+                quick = value;
+
+                pogymEntities p = new pogymEntities();
+                if (Poke != null && quick != null)
+                {
+                    ObjectParameter stab = new ObjectParameter("stab", typeof(int));
+                    p.sp_stab(Poke.pokemon_id, quick.attack_id, stab);
+                    QuickAttackSTAB = (int)stab.Value;
+
+                    if (QuickAttackSTAB == 1)
+                    {
+                        QuickAttackDamage = decimal.Round((decimal)quick.damage_stab, 2, MidpointRounding.AwayFromZero);
+                        QuickAttackDPS = decimal.Round((decimal)quick.damageps_stab, 2, MidpointRounding.AwayFromZero);
+                    }
+                    else
+                    {
+                        QuickAttackDamage = quick.damage;
+                        QuickAttackDPS = quick.damageps;
+                    }
+                }
+                else
+                {
+                    QuickAttackSTAB = 0;
+                    QuickAttackDamage = 0;
+                    QuickAttackDPS = 0;
+                }
+            }
+        }
+        public int QuickAttackSTAB { get; set; }
+        public decimal? QuickAttackDamage { get; set; }
+        public decimal? QuickAttackDPS { get; set; }
+
+        private attacks charge;
+        public attacks ChargeAttack
+        {
+            get
+            {
+                return charge;
+            }
+            set
+            {
+                charge = value;
+
+                pogymEntities p = new pogymEntities();
+                if (Poke != null && charge != null)
+                {
+                    ObjectParameter stab = new ObjectParameter("stab", typeof(int));
+                    p.sp_stab(Poke.pokemon_id, charge.attack_id, stab);
+                    ChargeAttackSTAB = (int)stab.Value;
+
+                    if (ChargeAttackSTAB == 1)
+                    {
+                        ChargeAttackDamage = decimal.Round((decimal)charge.damage_stab, 2, MidpointRounding.AwayFromZero);
+                        ChargeAttackDPS = decimal.Round((decimal)charge.damageps_stab, 2, MidpointRounding.AwayFromZero);                        
+                    }
+                    else
+                    {
+                        ChargeAttackDamage = charge.damage;
+                        ChargeAttackDPS = charge.damageps;
+                    }
+                }
+                else
+                {
+                    ChargeAttackSTAB = 0;
+                    ChargeAttackDamage = 0;
+                    ChargeAttackDPS = 0;
+                }
+            }
+        }
+        public int ChargeAttackSTAB { get; set; }
+        public decimal? ChargeAttackDamage { get; set; }
+        public decimal? ChargeAttackDPS { get; set; }
     }
 
     public class BattleCard
@@ -93,10 +177,29 @@ namespace pogym.Models
         {
             FavPokes = new List<Pokemon>();
             GymPokes = new List<Pokemon>();
+            AtkPokes = new List<Tuple<Pokemon,Pokemon, double?>>();
+        }
+
+        public void Reset()
+        {
+            foreach (var item in this.FavPokes)
+            {
+                item.Used = false;
+                item.Match = 0;
+            }
+
+            foreach (var item in this.GymPokes)
+            {
+                item.Used = false;
+                item.Match = 0;
+            }
+
+            this.AtkPokes.Clear();
         }
 
         public List<Pokemon> FavPokes { get; set; }
         public List<Pokemon> GymPokes { get; set; }
+        public List<Tuple<Pokemon,Pokemon,double?>> AtkPokes { get; set; }
     }
 
     [MetadataType(typeof(pokemonsMetaData))]

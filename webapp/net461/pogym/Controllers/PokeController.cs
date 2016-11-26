@@ -44,9 +44,82 @@ namespace pogym.Controllers
             return View(bc);
         }
 
-        public ActionResult Battle()
+        public ActionResult Battle(string b)
         {
-            return View();
+            //pogymEntities db = new pogymEntities();
+
+            if (b != null && b == "1")
+            {
+                BattleCard bc = new BattleCard();
+
+                if (TempData["BattleCard"] != null)
+                {
+                    bc = (BattleCard)TempData["BattleCard"];
+                }
+
+                bc.Reset();
+
+                foreach (var def in bc.GymPokes)
+                {
+                    List<int> types = new List<int>();
+
+                    foreach (var ptype in def.Poke.pokemons_types)
+                    {
+                        types.Add(ptype.type_id);
+                    }
+
+                    if(types.Count() == 1) { types.Add(0); }
+
+                    IEnumerable<sp_battle_Result> br = db.sp_battle(types[0], types[1]).AsEnumerable();
+
+                    foreach (var mult in br)
+                    {
+                        if(mult.multiplier > 1.25)
+                        {
+                            Pokemon pl = bc.FavPokes.Where(x => (x.Used == false && x.Poke.pokemons_types.Where(y => y.type_id == mult.type_id).Count() > 0)).FirstOrDefault();
+
+                            if (pl != null)
+                            {
+                                pl.Used = true;
+                                def.Used = true;
+                                Tuple<Pokemon,Pokemon, double?> t = new Tuple<Pokemon,Pokemon, double?>(pl, def, mult.multiplier);
+                                bc.AtkPokes.Add(t);
+                                break;
+                            }
+                        }
+                        if (mult.multiplier > 1.00)
+                        {
+                            Pokemon pl = bc.FavPokes.Where(x => (x.Used == false && x.Poke.pokemons_types.Where(y => y.type_id == mult.type_id).Count() > 0)).FirstOrDefault();
+
+                            if (pl != null)
+                            {
+                                pl.Used = true;
+                                def.Used = true;
+                                Tuple<Pokemon, Pokemon, double?> t = new Tuple<Pokemon, Pokemon, double?>(pl, def, mult.multiplier);
+                                bc.AtkPokes.Add(t);
+                                break;
+                            }
+                        }
+                        if (mult.multiplier == 1.00)
+                        {
+                            Pokemon pl = bc.FavPokes.Where(x => (x.Used == false && x.Poke.pokemons_types.Where(y => y.type_id == mult.type_id).Count() > 0)).FirstOrDefault();
+
+                            if (pl != null)
+                            {
+                                pl.Used = true;
+                                def.Used = true;
+                                Tuple<Pokemon, Pokemon, double?> t = new Tuple<Pokemon, Pokemon, double?>(pl, def, mult.multiplier);
+                                bc.AtkPokes.Add(t);
+                                break;
+                            }
+                        }
+                    }
+                }               
+
+                TempData["BattleCard"] = bc;
+            }
+
+            return RedirectToAction("Index");
         }
 
         public ActionResult Create(int? at)
@@ -68,6 +141,8 @@ namespace pogym.Controllers
             CreatePokemonViewModel v = new CreatePokemonViewModel();
             v.PokemonID = 63;
             v.SourceForm = (at != null)? (int)at : 1;
+
+            ViewBag.Title = "Add New Pokemon";
 
             return View(v);
         }
@@ -187,13 +262,13 @@ namespace pogym.Controllers
 
             if(at == null || at == 1)
             {
-                ViewBag.Title = "Favorite Pokemons";
+                ViewBag.Title = "Favorite Pokemons (High CP First)";
                 ViewBag.a = "1";
                 return View(bc.FavPokes.AsEnumerable());
             }
             else
             {
-                ViewBag.Title = "Pokemons at Gym";
+                ViewBag.Title = "Pokemons at Gym (High CP First)";
                 ViewBag.a = "2";
                 return View(bc.GymPokes.AsEnumerable());
             }

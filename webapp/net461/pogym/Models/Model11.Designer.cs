@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\lenin\Documents\Projects\ufabc-bd-pogym\app\net461\pogym\Models\Model10.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\lenin\Documents\Projects\ufabc-bd-pogym\webapp\net461\pogym\Models\Model11.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

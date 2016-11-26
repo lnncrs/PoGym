@@ -12,14 +12,12 @@ namespace pogym.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class pokemons_attacks
+    public partial class sysdiagrams
     {
-        public int pokemon_attack_id { get; set; }
-        public int pokemon_id { get; set; }
-        public int attack_id { get; set; }
-        public Nullable<decimal> true_damageps { get; set; }
-    
-        public virtual attacks attacks { get; set; }
-        public virtual pokemons pokemons { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

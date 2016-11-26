@@ -3,10 +3,15 @@
 @{
     ViewBag.Title = "PoGym - Battle calculator for Pokemon GO";
 }
-
 <div class="col-md-4">
+
     <div class="row text-center">
-        <h3><a href="~/Poke/ListPokemon?at=1">Favorite Pokemons</a></h3>
+        <h3>
+            <a href="~/Poke/ListPokemon?at=1">Favorite Pokemons</a>
+            <!--
+            &nbsp;<a href="~/Poke/ListPokemon?at=1" class="btn btn-primary btn-xs">Edit</a>
+            -->
+        </h3>
     </div>
 
     <div class="row space-row">
@@ -49,63 +54,80 @@
                 </div>
                 <div class="row">
                     @foreach (var type in item.Poke.pokemons_types)
-                    {
-                        <img src="@type.types.iconUrl" />
-                    }
+                {
+                <img src="@type.types.iconUrl" />
+                }
                 </div>
             </div>
             <div class="col-xs-7">
                 <div class="row">
                     <div class="col-xs-6">
-                        @item.QuickAttack.name
+                        @if(@item.QuickAttackSTAB == 1)
+                    {
+                    <b>@item.QuickAttack.name</b>
+                    }else
+                    {
+                    @item.QuickAttack.name
+                    }
                     </div>
                     <div class="col-xs-2">
                         <img src="@item.QuickAttack.types.iconUrl" />
                     </div>
                     <div class="col-xs-2">
-                        @item.QuickAttack.damage
+                        @item.QuickAttackDamage
                     </div>
                     <div class="col-xs-2">
-                        @item.QuickAttack.damageps
+                        @item.QuickAttackDPS
                     </div>
-                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xs-6">
-                        @item.ChargeAttack.name
+                        @if (@item.ChargeAttackSTAB == 1)
+                    {
+                    <b>@item.ChargeAttack.name</b>
+                    }
+                    else
+                    {
+                    @item.ChargeAttack.name
+                    }
                     </div>
                     <div class="col-xs-2">
                         <img src="@item.ChargeAttack.types.iconUrl" />
                     </div>
                     <div class="col-xs-2">
-                        @item.ChargeAttack.damage
+                        @item.ChargeAttackDamage
                     </div>
                     <div class="col-xs-2">
-                        @item.ChargeAttack.damageps
+                        @item.ChargeAttackDPS
                     </div>
                 </div>
             </div>
         </div>
+        <hr />
     }
 </div>
+
 <div class="col-md-4">
+
     <div class="row text-center">
-        <h3><a href="~/Poke/ListPokemon?at=2">Pokemons at Gym</a></h3>
+        <h3>
+            <a href="~/Poke/ListPokemon?at=2">Pokemons at Gym</a>
+            <!--
+            &nbsp;<a href="~/Poke/ListPokemon?at=2" class="btn btn-primary btn-xs">Edit</a>
+            -->
+        </h3>
     </div>
 
     <div class="row space-row">
-        <div class="col-xs-2 col-xs-offset-4">
-        </div>
-        <div class="col-xs-3">
-            <div class="row">
-                <b>Pokemon</b>
-            </div>
+        <div class="col-xs-2 col-lg-offset-5">
+            <b>Pokemon</b>
         </div>
     </div>
 
     @foreach (var item in Model.GymPokes)
     {
         <div class="row space-row">
-            <div class="col-xs-2 col-xs-offset-4">
+            <div class="col-xs-2 col-lg-offset-4">
                 <img src="@item.Poke.iconUrl" />
             </div>
             <div class="col-xs-3">
@@ -116,19 +138,85 @@
                 </div>
                 <div class="row">
                     @foreach (var type in item.Poke.pokemons_types)
+                {
+                <img src="@type.types.iconUrl" />
+                }
+                </div>
+            </div>
+        </div>
+        <hr />
+    }
+
+</div>
+
+<div class="col-md-4">
+        
+    <div class="row text-center">
+        <h3>Best attack order</h3>
+    </div>
+
+    <div class="row space-row">
+        <div class="col-xs-2 col-lg-offset-5">
+            <b>Match</b>
+        </div>
+    </div>
+
+    @foreach (var item in Model.AtkPokes)
+    {
+        <div class="row space-row">
+
+            <div class="col-xs-2 col-xs-offset-1">
+                <img src="@item.Item1.Poke.iconUrl" />
+            </div>
+            <div class="col-xs-2">
+                <div class="row">
+                    <a href="@item.Item1.Poke.urlUrl" target="_blank">
+                        @item.Item1.Poke.name
+                    </a>
+                </div>
+                <div class="row">
+                    @foreach (var type in item.Item1.Poke.pokemons_types)
                     {
                         <img src="@type.types.iconUrl" />
                     }
                 </div>
             </div>
+
+            <div class="col-xs-2">
+                <h4>
+                    @string.Format("x{0}", item.Item3.Value)
+                </h4>
+            </div>
+                
+            <div class="col-xs-2">
+                <img src="@item.Item2.Poke.iconUrl" />
+            </div>
+            <div class="col-xs-2">
+                <div class="row">
+                    <a href="@item.Item2.Poke.urlUrl" target="_blank">
+                        @item.Item2.Poke.name
+                    </a>
+                </div>
+                <div class="row">
+                    @foreach (var type in item.Item2.Poke.pokemons_types)
+                    {
+                        <img src="@type.types.iconUrl" />
+                    }
+                </div>
+            </div>
+
         </div>
+        <hr />
     }
+
 </div>
-<div class="col-md-4">
+
+<div class="col-md-12">
     <div class="row text-center">
-        <h3>Best attack order</h3>
+        <a href="~/Poke/Battle?b=1" class="btn btn-warning">Battle!</a>
     </div>
 </div>
+
 
 <!--
 <div class="row vertical-align text-center space-row">

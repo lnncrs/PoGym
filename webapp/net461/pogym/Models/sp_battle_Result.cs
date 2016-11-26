@@ -10,16 +10,11 @@
 namespace pogym.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class pokemons_attacks
+    public partial class sp_battle_Result
     {
-        public int pokemon_attack_id { get; set; }
-        public int pokemon_id { get; set; }
-        public int attack_id { get; set; }
-        public Nullable<decimal> true_damageps { get; set; }
-    
-        public virtual attacks attacks { get; set; }
-        public virtual pokemons pokemons { get; set; }
+        public Nullable<double> multiplier { get; set; }
+        public int type_id { get; set; }
+        public string type { get; set; }
     }
 }

@@ -78,6 +78,16 @@
           <Property Name="pokemon_id" Type="int" Nullable="false" />
           <Property Name="type_id" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
         <EntityType Name="types">
           <Key>
             <PropertyRef Name="type_id" />
@@ -235,6 +245,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="fn_stab" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+          <Parameter Name="pokemon_id" Type="int" Mode="In" />
+          <Parameter Name="type_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_battle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="type1" Type="int" Mode="In" />
+          <Parameter Name="type2" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_stab" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="pokemon_id" Type="int" Mode="In" />
+          <Parameter Name="attack_id" Type="int" Mode="In" />
+          <Parameter Name="stab" Type="int" Mode="InOut" />
+        </Function>
         <EntityContainer Name="pogymModelStoreContainer">
           <EntitySet Name="attacks" EntityType="Self.attacks" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="attacks_charge" EntityType="Self.attacks_charge" Schema="dbo" store:Type="Tables" />
@@ -243,6 +266,7 @@
           <EntitySet Name="pokemons" EntityType="Self.pokemons" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="pokemons_attacks" EntityType="Self.pokemons_attacks" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="pokemons_types" EntityType="Self.pokemons_types" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="types" EntityType="Self.types" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="types_types" EntityType="Self.types_types" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_attacks_attacks_types" Association="Self.FK_attacks_attacks_types">
@@ -294,13 +318,52 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="pogymModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="attacks">
+          <Key>
+            <PropertyRef Name="attack_id" />
+          </Key>
+          <Property Name="attack_id" Type="Int32" Nullable="false" />
+          <Property Name="attack_type_id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="type_id" Type="Int32" Nullable="false" />
+          <Property Name="damage" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="damage_stab" Type="Decimal" Precision="22" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="damageps" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="damageps_stab" Type="Decimal" Precision="22" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="move_cooldown" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="attacks_types" Relationship="Self.FK_attacks_attacks_types" FromRole="attacks" ToRole="attacks_types" />
+          <NavigationProperty Name="attacks_charge" Relationship="Self.FK_attacks_charge_attacks" FromRole="attacks" ToRole="attacks_charge" />
+          <NavigationProperty Name="attacks_quick" Relationship="Self.FK_attacks_quick_attacks" FromRole="attacks" ToRole="attacks_quick" />
+          <NavigationProperty Name="types" Relationship="Self.FK_attacks_types" FromRole="attacks" ToRole="types" />
+          <NavigationProperty Name="pokemons_attacks" Relationship="Self.FK_pokemons_attacks_attacks" FromRole="attacks" ToRole="pokemons_attacks" />
+        </EntityType>
+        <EntityType Name="attacks_charge">
+          <Key>
+            <PropertyRef Name="attack_id" />
+          </Key>
+          <Property Name="attack_id" Type="Int32" Nullable="false" />
+          <Property Name="charge" Type="Int32" Nullable="false" />
+          <Property Name="critical" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dodge" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="attacks" Relationship="Self.FK_attacks_charge_attacks" FromRole="attacks_charge" ToRole="attacks" />
+        </EntityType>
+        <EntityType Name="attacks_quick">
+          <Key>
+            <PropertyRef Name="attack_id" />
+          </Key>
+          <Property Name="attack_id" Type="Int32" Nullable="false" />
+          <Property Name="energyps" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="energypu" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="defensive_damageps" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="attacks" Relationship="Self.FK_attacks_quick_attacks" FromRole="attacks_quick" ToRole="attacks" />
+        </EntityType>
         <EntityType Name="attacks_types">
           <Key>
             <PropertyRef Name="attack_type_id" />
           </Key>
           <Property Name="attack_type_id" Type="Int32" Nullable="false" />
           <Property Name="type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="attacks" Relationship="pogymModel.FK_attacks_attacks_types" FromRole="attacks_types" ToRole="attacks" />
+          <NavigationProperty Name="attacks" Relationship="Self.FK_attacks_attacks_types" FromRole="attacks_types" ToRole="attacks" />
         </EntityType>
         <EntityType Name="pokemons">
           <Key>
@@ -331,8 +394,8 @@
           <Property Name="pokemon_id" Type="Int32" Nullable="false" />
           <Property Name="attack_id" Type="Int32" Nullable="false" />
           <Property Name="true_damageps" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="attacks" Relationship="Self.FK_pokemons_attacks_attacks" FromRole="pokemons_attacks" ToRole="attacks" />
           <NavigationProperty Name="pokemons" Relationship="Self.FK_pokemons_attacks_pokemons" FromRole="pokemons_attacks" ToRole="pokemons" />
-          <NavigationProperty Name="attacks" Relationship="pogymModel.FK_pokemons_attacks_attacks" FromRole="pokemons_attacks" ToRole="attacks" />
         </EntityType>
         <EntityType Name="pokemons_types">
           <Key>
@@ -344,17 +407,27 @@
           <NavigationProperty Name="pokemons" Relationship="Self.FK_pokemons_types_pokemons" FromRole="pokemons_types" ToRole="pokemons" />
           <NavigationProperty Name="types" Relationship="Self.FK_pokemons_types_types" FromRole="pokemons_types" ToRole="types" />
         </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
         <EntityType Name="types">
           <Key>
             <PropertyRef Name="type_id" />
           </Key>
           <Property Name="type_id" Type="Int32" Nullable="false" />
           <Property Name="type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="icon" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="attacks" Relationship="Self.FK_attacks_types" FromRole="types" ToRole="attacks" />
           <NavigationProperty Name="pokemons_types" Relationship="Self.FK_pokemons_types_types" FromRole="types" ToRole="pokemons_types" />
           <NavigationProperty Name="types_types" Relationship="Self.FK_types_types_types" FromRole="types" ToRole="types_types" />
           <NavigationProperty Name="types_types1" Relationship="Self.FK_types_types_types1" FromRole="types" ToRole="types_types" />
-          <NavigationProperty Name="attacks" Relationship="pogymModel.FK_attacks_types" FromRole="types" ToRole="attacks" />
-          <Property Name="icon" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="types_types">
           <Key>
@@ -367,6 +440,70 @@
           <NavigationProperty Name="types" Relationship="Self.FK_types_types_types" FromRole="types_types" ToRole="types" />
           <NavigationProperty Name="types1" Relationship="Self.FK_types_types_types1" FromRole="types_types" ToRole="types" />
         </EntityType>
+        <Association Name="FK_attacks_attacks_types">
+          <End Role="attacks_types" Type="Self.attacks_types" Multiplicity="1" />
+          <End Role="attacks" Type="Self.attacks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="attacks_types">
+              <PropertyRef Name="attack_type_id" />
+            </Principal>
+            <Dependent Role="attacks">
+              <PropertyRef Name="attack_type_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_attacks_charge_attacks">
+          <End Role="attacks" Type="Self.attacks" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="attacks_charge" Type="Self.attacks_charge" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="attacks">
+              <PropertyRef Name="attack_id" />
+            </Principal>
+            <Dependent Role="attacks_charge">
+              <PropertyRef Name="attack_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_attacks_quick_attacks">
+          <End Role="attacks" Type="Self.attacks" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="attacks_quick" Type="Self.attacks_quick" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="attacks">
+              <PropertyRef Name="attack_id" />
+            </Principal>
+            <Dependent Role="attacks_quick">
+              <PropertyRef Name="attack_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_attacks_types">
+          <End Role="types" Type="Self.types" Multiplicity="1" />
+          <End Role="attacks" Type="Self.attacks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="types">
+              <PropertyRef Name="type_id" />
+            </Principal>
+            <Dependent Role="attacks">
+              <PropertyRef Name="type_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pokemons_attacks_attacks">
+          <End Role="attacks" Type="Self.attacks" Multiplicity="1" />
+          <End Role="pokemons_attacks" Type="Self.pokemons_attacks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="attacks">
+              <PropertyRef Name="attack_id" />
+            </Principal>
+            <Dependent Role="pokemons_attacks">
+              <PropertyRef Name="attack_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_pokemons_attacks_pokemons">
           <End Role="pokemons" Type="Self.pokemons" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -444,12 +581,36 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="pogymEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="attacks" EntityType="Self.attacks" />
+          <EntitySet Name="attacks_charge" EntityType="Self.attacks_charge" />
+          <EntitySet Name="attacks_quick" EntityType="Self.attacks_quick" />
           <EntitySet Name="attacks_types" EntityType="Self.attacks_types" />
           <EntitySet Name="pokemons" EntityType="Self.pokemons" />
           <EntitySet Name="pokemons_attacks" EntityType="Self.pokemons_attacks" />
           <EntitySet Name="pokemons_types" EntityType="Self.pokemons_types" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="types" EntityType="Self.types" />
           <EntitySet Name="types_types" EntityType="Self.types_types" />
+          <AssociationSet Name="FK_attacks_attacks_types" Association="Self.FK_attacks_attacks_types">
+            <End Role="attacks_types" EntitySet="attacks_types" />
+            <End Role="attacks" EntitySet="attacks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_attacks_charge_attacks" Association="Self.FK_attacks_charge_attacks">
+            <End Role="attacks" EntitySet="attacks" />
+            <End Role="attacks_charge" EntitySet="attacks_charge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_attacks_quick_attacks" Association="Self.FK_attacks_quick_attacks">
+            <End Role="attacks" EntitySet="attacks" />
+            <End Role="attacks_quick" EntitySet="attacks_quick" />
+          </AssociationSet>
+          <AssociationSet Name="FK_attacks_types" Association="Self.FK_attacks_types">
+            <End Role="types" EntitySet="types" />
+            <End Role="attacks" EntitySet="attacks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pokemons_attacks_attacks" Association="Self.FK_pokemons_attacks_attacks">
+            <End Role="attacks" EntitySet="attacks" />
+            <End Role="pokemons_attacks" EntitySet="pokemons_attacks" />
+          </AssociationSet>
           <AssociationSet Name="FK_pokemons_attacks_pokemons" Association="Self.FK_pokemons_attacks_pokemons">
             <End Role="pokemons" EntitySet="pokemons" />
             <End Role="pokemons_attacks" EntitySet="pokemons_attacks" />
@@ -474,139 +635,62 @@
             <End Role="types" EntitySet="types" />
             <End Role="types_types" EntitySet="types_types" />
           </AssociationSet>
-          <EntitySet Name="attacks" EntityType="pogymModel.attacks" />
-          <EntitySet Name="attacks_charge" EntityType="pogymModel.attacks_charge" />
-          <EntitySet Name="attacks_quick" EntityType="pogymModel.attacks_quick" />
-          <AssociationSet Name="FK_attacks_attacks_types" Association="pogymModel.FK_attacks_attacks_types">
-            <End Role="attacks_types" EntitySet="attacks_types" />
-            <End Role="attacks" EntitySet="attacks" />
-          </AssociationSet>
-          <AssociationSet Name="FK_attacks_charge_attacks" Association="pogymModel.FK_attacks_charge_attacks">
-            <End Role="attacks" EntitySet="attacks" />
-            <End Role="attacks_charge" EntitySet="attacks_charge" />
-          </AssociationSet>
-          <AssociationSet Name="FK_attacks_quick_attacks" Association="pogymModel.FK_attacks_quick_attacks">
-            <End Role="attacks" EntitySet="attacks" />
-            <End Role="attacks_quick" EntitySet="attacks_quick" />
-          </AssociationSet>
-          <AssociationSet Name="FK_attacks_types" Association="pogymModel.FK_attacks_types">
-            <End Role="types" EntitySet="types" />
-            <End Role="attacks" EntitySet="attacks" />
-          </AssociationSet>
-          <AssociationSet Name="FK_pokemons_attacks_attacks" Association="pogymModel.FK_pokemons_attacks_attacks">
-            <End Role="attacks" EntitySet="attacks" />
-            <End Role="pokemons_attacks" EntitySet="pokemons_attacks" />
-          </AssociationSet>
+          <FunctionImport Name="sp_stab">
+            <Parameter Name="pokemon_id" Mode="In" Type="Int32" />
+            <Parameter Name="attack_id" Mode="In" Type="Int32" />
+            <Parameter Name="stab" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_battle" ReturnType="Collection(pogymModel.sp_battle_Result)">
+            <Parameter Name="type1" Mode="In" Type="Int32" />
+            <Parameter Name="type2" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
-        <EntityType Name="attacks">
-          <Key>
-            <PropertyRef Name="attack_id" />
-          </Key>
-          <Property Name="attack_id" Type="Int32" Nullable="false" />
-          <Property Name="attack_type_id" Type="Int32" Nullable="false" />
-          <Property Name="name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="type_id" Type="Int32" Nullable="false" />
-          <Property Name="damage" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <Property Name="damage_stab" Type="Decimal" Precision="22" Scale="4" annotation:StoreGeneratedPattern="Computed" />
-          <Property Name="damageps" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <Property Name="damageps_stab" Type="Decimal" Precision="22" Scale="4" annotation:StoreGeneratedPattern="Computed" />
-          <Property Name="move_cooldown" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <NavigationProperty Name="attacks_types" Relationship="pogymModel.FK_attacks_attacks_types" FromRole="attacks" ToRole="attacks_types" />
-          <NavigationProperty Name="attacks_charge" Relationship="pogymModel.FK_attacks_charge_attacks" FromRole="attacks" ToRole="attacks_charge" />
-          <NavigationProperty Name="attacks_quick" Relationship="pogymModel.FK_attacks_quick_attacks" FromRole="attacks" ToRole="attacks_quick" />
-          <NavigationProperty Name="types" Relationship="pogymModel.FK_attacks_types" FromRole="attacks" ToRole="types" />
-          <NavigationProperty Name="pokemons_attacks" Relationship="pogymModel.FK_pokemons_attacks_attacks" FromRole="attacks" ToRole="pokemons_attacks" />
-        </EntityType>
-        <EntityType Name="attacks_charge">
-          <Key>
-            <PropertyRef Name="attack_id" />
-          </Key>
-          <Property Name="attack_id" Type="Int32" Nullable="false" />
-          <Property Name="charge" Type="Int32" Nullable="false" />
-          <Property Name="critical" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <Property Name="dodge" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <NavigationProperty Name="attacks" Relationship="pogymModel.FK_attacks_charge_attacks" FromRole="attacks_charge" ToRole="attacks" />
-        </EntityType>
-        <EntityType Name="attacks_quick">
-          <Key>
-            <PropertyRef Name="attack_id" />
-          </Key>
-          <Property Name="attack_id" Type="Int32" Nullable="false" />
-          <Property Name="energyps" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <Property Name="energypu" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <Property Name="defensive_damageps" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
-          <NavigationProperty Name="attacks" Relationship="pogymModel.FK_attacks_quick_attacks" FromRole="attacks_quick" ToRole="attacks" />
-        </EntityType>
-        <Association Name="FK_attacks_attacks_types">
-          <End Type="pogymModel.attacks_types" Role="attacks_types" Multiplicity="1" />
-          <End Type="pogymModel.attacks" Role="attacks" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="attacks_types">
-              <PropertyRef Name="attack_type_id" />
-            </Principal>
-            <Dependent Role="attacks">
-              <PropertyRef Name="attack_type_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_attacks_charge_attacks">
-          <End Type="pogymModel.attacks" Role="attacks" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Type="pogymModel.attacks_charge" Role="attacks_charge" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="attacks">
-              <PropertyRef Name="attack_id" />
-            </Principal>
-            <Dependent Role="attacks_charge">
-              <PropertyRef Name="attack_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_attacks_quick_attacks">
-          <End Type="pogymModel.attacks" Role="attacks" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Type="pogymModel.attacks_quick" Role="attacks_quick" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="attacks">
-              <PropertyRef Name="attack_id" />
-            </Principal>
-            <Dependent Role="attacks_quick">
-              <PropertyRef Name="attack_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_attacks_types">
-          <End Type="pogymModel.types" Role="types" Multiplicity="1" />
-          <End Type="pogymModel.attacks" Role="attacks" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="types">
-              <PropertyRef Name="type_id" />
-            </Principal>
-            <Dependent Role="attacks">
-              <PropertyRef Name="type_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_pokemons_attacks_attacks">
-          <End Type="pogymModel.attacks" Role="attacks" Multiplicity="1" />
-          <End Type="pogymModel.pokemons_attacks" Role="pokemons_attacks" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="attacks">
-              <PropertyRef Name="attack_id" />
-            </Principal>
-            <Dependent Role="pokemons_attacks">
-              <PropertyRef Name="attack_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
+        <ComplexType Name="sp_battle_Result">
+          <Property Type="Double" Name="multiplier" Nullable="true" />
+          <Property Type="Int32" Name="type_id" Nullable="false" />
+          <Property Type="String" Name="type" Nullable="false" MaxLength="100" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="pogymModelStoreContainer" CdmEntityContainer="pogymEntities">
+          <EntitySetMapping Name="attacks">
+            <EntityTypeMapping TypeName="pogymModel.attacks">
+              <MappingFragment StoreEntitySet="attacks">
+                <ScalarProperty Name="attack_id" ColumnName="attack_id" />
+                <ScalarProperty Name="attack_type_id" ColumnName="attack_type_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="type_id" ColumnName="type_id" />
+                <ScalarProperty Name="damage" ColumnName="damage" />
+                <ScalarProperty Name="damage_stab" ColumnName="damage_stab" />
+                <ScalarProperty Name="damageps" ColumnName="damageps" />
+                <ScalarProperty Name="damageps_stab" ColumnName="damageps_stab" />
+                <ScalarProperty Name="move_cooldown" ColumnName="move_cooldown" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="attacks_charge">
+            <EntityTypeMapping TypeName="pogymModel.attacks_charge">
+              <MappingFragment StoreEntitySet="attacks_charge">
+                <ScalarProperty Name="attack_id" ColumnName="attack_id" />
+                <ScalarProperty Name="charge" ColumnName="charge" />
+                <ScalarProperty Name="critical" ColumnName="critical" />
+                <ScalarProperty Name="dodge" ColumnName="dodge" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="attacks_quick">
+            <EntityTypeMapping TypeName="pogymModel.attacks_quick">
+              <MappingFragment StoreEntitySet="attacks_quick">
+                <ScalarProperty Name="attack_id" ColumnName="attack_id" />
+                <ScalarProperty Name="energyps" ColumnName="energyps" />
+                <ScalarProperty Name="energypu" ColumnName="energypu" />
+                <ScalarProperty Name="defensive_damageps" ColumnName="defensive_damageps" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="attacks_types">
             <EntityTypeMapping TypeName="pogymModel.attacks_types">
               <MappingFragment StoreEntitySet="attacks_types">
@@ -652,12 +736,23 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="pogymModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="types">
             <EntityTypeMapping TypeName="pogymModel.types">
               <MappingFragment StoreEntitySet="types">
-                <ScalarProperty Name="icon" ColumnName="icon" />
                 <ScalarProperty Name="type_id" ColumnName="type_id" />
                 <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="icon" ColumnName="icon" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -671,41 +766,16 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="attacks">
-            <EntityTypeMapping TypeName="pogymModel.attacks">
-              <MappingFragment StoreEntitySet="attacks">
-                <ScalarProperty Name="move_cooldown" ColumnName="move_cooldown" />
-                <ScalarProperty Name="damageps_stab" ColumnName="damageps_stab" />
-                <ScalarProperty Name="damageps" ColumnName="damageps" />
-                <ScalarProperty Name="damage_stab" ColumnName="damage_stab" />
-                <ScalarProperty Name="damage" ColumnName="damage" />
+          <FunctionImportMapping FunctionImportName="sp_stab" FunctionName="pogymModel.Store.sp_stab" />
+          <FunctionImportMapping FunctionImportName="sp_battle" FunctionName="pogymModel.Store.sp_battle">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="pogymModel.sp_battle_Result">
+                <ScalarProperty Name="multiplier" ColumnName="multiplier" />
                 <ScalarProperty Name="type_id" ColumnName="type_id" />
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="attack_type_id" ColumnName="attack_type_id" />
-                <ScalarProperty Name="attack_id" ColumnName="attack_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="attacks_charge">
-            <EntityTypeMapping TypeName="pogymModel.attacks_charge">
-              <MappingFragment StoreEntitySet="attacks_charge">
-                <ScalarProperty Name="dodge" ColumnName="dodge" />
-                <ScalarProperty Name="critical" ColumnName="critical" />
-                <ScalarProperty Name="charge" ColumnName="charge" />
-                <ScalarProperty Name="attack_id" ColumnName="attack_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="attacks_quick">
-            <EntityTypeMapping TypeName="pogymModel.attacks_quick">
-              <MappingFragment StoreEntitySet="attacks_quick">
-                <ScalarProperty Name="defensive_damageps" ColumnName="defensive_damageps" />
-                <ScalarProperty Name="energypu" ColumnName="energypu" />
-                <ScalarProperty Name="energyps" ColumnName="energyps" />
-                <ScalarProperty Name="attack_id" ColumnName="attack_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
+                <ScalarProperty Name="type" ColumnName="type" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
