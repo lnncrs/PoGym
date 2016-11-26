@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap-cerulean.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+
+    @*
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("PoGym", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    *@
+
+    <div class="container-fluid body-content">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1><a href="~/Poke">PoGym - Battle calculator for Pokemon GO</a></h1>
+            </div>
+        </div>
+        <div class="row">
+            @RenderBody()
+        </div>
+        <hr />
+        <div class="row">
+            <footer class="col-sm-12 text-center">
+                <p>All data in this site comes from <a href="https://pokemongo.gamepress.gg" target="_blank">pokemongo.gamepress.gg</a> and <a href="https://thesilphroad.com" target="_blank">thesilphroad.com</a> without their efforts this tool could not be possible.</p>
+                <p>PoGym @DateTime.Now.Year</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

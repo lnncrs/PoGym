@@ -1,6 +1,168 @@
-﻿use pogym
+"C:\Program Files\Miniconda\python.exe" C:/Users/lenin/Documents/Projects/python/crawlers/gamepress/import_ggdata.py
+step #1 collecting moves...
+collected 124 moves
 
-INSERT INTO [types] ([type_id],[type]) VALUES 
+step #2 collecting pokemons...
+collected 151 pokemons
+
+step #3 processing individual data
+processing #1 Bulbasaur (https://pokemongo.gamepress.gg//pokemon/1)
+processing #2 Ivysaur (https://pokemongo.gamepress.gg//pokemon/2)
+processing #3 Venusaur (https://pokemongo.gamepress.gg//pokemon/3)
+processing #4 Charmander (https://pokemongo.gamepress.gg//pokemon/4)
+processing #5 Charmeleon (https://pokemongo.gamepress.gg//pokemon/5)
+processing #6 Charizard (https://pokemongo.gamepress.gg//pokemon/6)
+processing #7 Squirtle (https://pokemongo.gamepress.gg//pokemon/7)
+processing #8 Wartortle (https://pokemongo.gamepress.gg//pokemon/8)
+processing #9 Blastoise (https://pokemongo.gamepress.gg//pokemon/9)
+processing #10 Caterpie (https://pokemongo.gamepress.gg//pokemon/10)
+processing #11 Metapod (https://pokemongo.gamepress.gg//pokemon/11)
+processing #12 Butterfree (https://pokemongo.gamepress.gg//pokemon/12)
+processing #13 Weedle (https://pokemongo.gamepress.gg//pokemon/13)
+processing #14 Kakuna (https://pokemongo.gamepress.gg//pokemon/14)
+processing #15 Beedrill (https://pokemongo.gamepress.gg//pokemon/15)
+processing #16 Pidgey (https://pokemongo.gamepress.gg//pokemon/16)
+processing #17 Pidgeotto (https://pokemongo.gamepress.gg//pokemon/17)
+processing #18 Pidgeot (https://pokemongo.gamepress.gg//pokemon/18)
+processing #19 Rattata (https://pokemongo.gamepress.gg//pokemon/19)
+processing #20 Raticate (https://pokemongo.gamepress.gg//pokemon/20)
+processing #21 Spearow (https://pokemongo.gamepress.gg//pokemon/21)
+processing #22 Fearow (https://pokemongo.gamepress.gg//pokemon/22)
+processing #23 Ekans (https://pokemongo.gamepress.gg//pokemon/23)
+processing #24 Arbok (https://pokemongo.gamepress.gg//pokemon/24)
+processing #25 Pikachu (https://pokemongo.gamepress.gg//pokemon/25)
+processing #26 Raichu (https://pokemongo.gamepress.gg//pokemon/26)
+processing #27 Sandshrew (https://pokemongo.gamepress.gg//pokemon/27)
+processing #28 Sandslash (https://pokemongo.gamepress.gg//pokemon/28)
+processing #29 Nidoran♀ (https://pokemongo.gamepress.gg//pokemon/29)
+processing #30 Nidorina (https://pokemongo.gamepress.gg//pokemon/30)
+processing #31 Nidoqueen (https://pokemongo.gamepress.gg//pokemon/31)
+processing #32 Nidoran♂ (https://pokemongo.gamepress.gg//pokemon/32)
+processing #33 Nidorino (https://pokemongo.gamepress.gg//pokemon/33)
+processing #34 Nidoking (https://pokemongo.gamepress.gg//pokemon/34)
+processing #35 Clefairy (https://pokemongo.gamepress.gg//pokemon/35)
+processing #36 Clefable (https://pokemongo.gamepress.gg//pokemon/36)
+processing #37 Vulpix (https://pokemongo.gamepress.gg//pokemon/37)
+processing #38 Ninetales (https://pokemongo.gamepress.gg//pokemon/38)
+processing #39 Jigglypuff (https://pokemongo.gamepress.gg//pokemon/39)
+processing #40 Wigglytuff (https://pokemongo.gamepress.gg//pokemon/40)
+processing #41 Zubat (https://pokemongo.gamepress.gg//pokemon/41)
+processing #42 Golbat (https://pokemongo.gamepress.gg//pokemon/42)
+processing #43 Oddish (https://pokemongo.gamepress.gg//pokemon/43)
+processing #44 Gloom (https://pokemongo.gamepress.gg//pokemon/44)
+processing #45 Vileplume (https://pokemongo.gamepress.gg//pokemon/45)
+processing #46 Paras (https://pokemongo.gamepress.gg//pokemon/46)
+processing #47 Parasect (https://pokemongo.gamepress.gg//pokemon/47)
+processing #48 Venonat (https://pokemongo.gamepress.gg//pokemon/48)
+processing #49 Venomoth (https://pokemongo.gamepress.gg//pokemon/49)
+processing #50 Diglett (https://pokemongo.gamepress.gg//pokemon/50)
+processing #51 Dugtrio (https://pokemongo.gamepress.gg//pokemon/51)
+processing #52 Meowth (https://pokemongo.gamepress.gg//pokemon/52)
+processing #53 Persian (https://pokemongo.gamepress.gg//pokemon/53)
+processing #54 Psyduck (https://pokemongo.gamepress.gg//pokemon/54)
+processing #55 Golduck (https://pokemongo.gamepress.gg//pokemon/55)
+processing #56 Mankey (https://pokemongo.gamepress.gg//pokemon/56)
+processing #57 Primeape (https://pokemongo.gamepress.gg//pokemon/57)
+processing #58 Growlithe (https://pokemongo.gamepress.gg//pokemon/58)
+processing #59 Arcanine (https://pokemongo.gamepress.gg//pokemon/59)
+processing #60 Poliwag (https://pokemongo.gamepress.gg//pokemon/60)
+processing #61 Poliwhirl (https://pokemongo.gamepress.gg//pokemon/61)
+processing #62 Poliwrath (https://pokemongo.gamepress.gg//pokemon/62)
+processing #63 Abra (https://pokemongo.gamepress.gg//pokemon/63)
+processing #64 Kadabra (https://pokemongo.gamepress.gg//pokemon/64)
+processing #65 Alakazam (https://pokemongo.gamepress.gg//pokemon/65)
+processing #66 Machop (https://pokemongo.gamepress.gg//pokemon/66)
+processing #67 Machoke (https://pokemongo.gamepress.gg//pokemon/67)
+processing #68 Machamp (https://pokemongo.gamepress.gg//pokemon/68)
+processing #69 Bellsprout (https://pokemongo.gamepress.gg//pokemon/69)
+processing #70 Weepinbell (https://pokemongo.gamepress.gg//pokemon/70)
+processing #71 Victreebel (https://pokemongo.gamepress.gg//pokemon/71)
+processing #72 Tentacool (https://pokemongo.gamepress.gg//pokemon/72)
+processing #73 Tentacruel (https://pokemongo.gamepress.gg//pokemon/73)
+processing #74 Geodude (https://pokemongo.gamepress.gg//pokemon/74)
+processing #75 Graveler (https://pokemongo.gamepress.gg//pokemon/75)
+processing #76 Golem (https://pokemongo.gamepress.gg//pokemon/76)
+processing #77 Ponyta (https://pokemongo.gamepress.gg//pokemon/77)
+processing #78 Rapidash (https://pokemongo.gamepress.gg//pokemon/78)
+processing #79 Slowpoke (https://pokemongo.gamepress.gg//pokemon/79)
+processing #80 Slowbro (https://pokemongo.gamepress.gg//pokemon/80)
+processing #81 Magnemite (https://pokemongo.gamepress.gg//pokemon/81)
+processing #82 Magneton (https://pokemongo.gamepress.gg//pokemon/82)
+processing #83 Farfetch'd (https://pokemongo.gamepress.gg//pokemon/83)
+processing #84 Doduo (https://pokemongo.gamepress.gg//pokemon/84)
+processing #85 Dodrio (https://pokemongo.gamepress.gg//pokemon/85)
+processing #86 Seel (https://pokemongo.gamepress.gg//pokemon/86)
+processing #87 Dewgong (https://pokemongo.gamepress.gg//pokemon/87)
+processing #88 Grimer (https://pokemongo.gamepress.gg//pokemon/88)
+processing #89 Muk (https://pokemongo.gamepress.gg//pokemon/89)
+processing #90 Shellder (https://pokemongo.gamepress.gg//pokemon/90)
+processing #91 Cloyster (https://pokemongo.gamepress.gg//pokemon/91)
+processing #92 Gastly (https://pokemongo.gamepress.gg//pokemon/92)
+processing #93 Haunter (https://pokemongo.gamepress.gg//pokemon/93)
+processing #94 Gengar (https://pokemongo.gamepress.gg//pokemon/94)
+processing #95 Onix (https://pokemongo.gamepress.gg//pokemon/95)
+processing #96 Drowzee (https://pokemongo.gamepress.gg//pokemon/96)
+processing #97 Hypno (https://pokemongo.gamepress.gg//pokemon/97)
+processing #98 Krabby (https://pokemongo.gamepress.gg//pokemon/98)
+processing #99 Kingler (https://pokemongo.gamepress.gg//pokemon/99)
+processing #100 Voltorb (https://pokemongo.gamepress.gg//pokemon/100)
+processing #101 Electrode (https://pokemongo.gamepress.gg//pokemon/101)
+processing #102 Exeggcute (https://pokemongo.gamepress.gg//pokemon/102)
+processing #103 Exeggutor (https://pokemongo.gamepress.gg//pokemon/103)
+processing #104 Cubone (https://pokemongo.gamepress.gg//pokemon/104)
+processing #105 Marowak (https://pokemongo.gamepress.gg//pokemon/105)
+processing #106 Hitmonlee (https://pokemongo.gamepress.gg//pokemon/106)
+processing #107 Hitmonchan (https://pokemongo.gamepress.gg//pokemon/107)
+processing #108 Lickitung (https://pokemongo.gamepress.gg//pokemon/108)
+processing #109 Koffing (https://pokemongo.gamepress.gg//pokemon/109)
+processing #110 Weezing (https://pokemongo.gamepress.gg//pokemon/110)
+processing #111 Rhyhorn (https://pokemongo.gamepress.gg//pokemon/111)
+processing #112 Rhydon (https://pokemongo.gamepress.gg//pokemon/112)
+processing #113 Chansey (https://pokemongo.gamepress.gg//pokemon/113)
+processing #114 Tangela (https://pokemongo.gamepress.gg//pokemon/114)
+processing #115 Kangaskhan (https://pokemongo.gamepress.gg//pokemon/115)
+processing #116 Horsea (https://pokemongo.gamepress.gg//pokemon/116)
+processing #117 Seadra (https://pokemongo.gamepress.gg//pokemon/117)
+processing #118 Goldeen (https://pokemongo.gamepress.gg//pokemon/118)
+processing #119 Seaking (https://pokemongo.gamepress.gg//pokemon/119)
+processing #120 Staryu (https://pokemongo.gamepress.gg//pokemon/120)
+processing #121 Starmie (https://pokemongo.gamepress.gg//pokemon/121)
+processing #122 Mr. Mime (https://pokemongo.gamepress.gg//pokemon/122)
+processing #123 Scyther (https://pokemongo.gamepress.gg//pokemon/123)
+processing #124 Jynx (https://pokemongo.gamepress.gg//pokemon/124)
+processing #125 Electabuzz (https://pokemongo.gamepress.gg//pokemon/125)
+processing #126 Magmar (https://pokemongo.gamepress.gg//pokemon/126)
+processing #127 Pinsir (https://pokemongo.gamepress.gg//pokemon/127)
+processing #128 Tauros (https://pokemongo.gamepress.gg//pokemon/128)
+processing #129 Magikarp (https://pokemongo.gamepress.gg//pokemon/129)
+processing #130 Gyarados (https://pokemongo.gamepress.gg//pokemon/130)
+processing #131 Lapras (https://pokemongo.gamepress.gg//pokemon/131)
+processing #132 Ditto (https://pokemongo.gamepress.gg//pokemon/132)
+processing #133 Eevee (https://pokemongo.gamepress.gg//pokemon/133)
+processing #134 Vaporeon (https://pokemongo.gamepress.gg//pokemon/134)
+processing #135 Jolteon (https://pokemongo.gamepress.gg//pokemon/135)
+processing #136 Flareon (https://pokemongo.gamepress.gg//pokemon/136)
+processing #137 Porygon (https://pokemongo.gamepress.gg//pokemon/137)
+processing #138 Omanyte (https://pokemongo.gamepress.gg//pokemon/138)
+processing #139 Omastar (https://pokemongo.gamepress.gg//pokemon/139)
+processing #140 Kabuto (https://pokemongo.gamepress.gg//pokemon/140)
+processing #141 Kabutops (https://pokemongo.gamepress.gg//pokemon/141)
+processing #142 Aerodactyl (https://pokemongo.gamepress.gg//pokemon/142)
+processing #143 Snorlax (https://pokemongo.gamepress.gg//pokemon/143)
+processing #144 Articuno (https://pokemongo.gamepress.gg//pokemon/144)
+processing #145 Zapdos (https://pokemongo.gamepress.gg//pokemon/145)
+processing #146 Moltres (https://pokemongo.gamepress.gg//pokemon/146)
+processing #147 Dratini (https://pokemongo.gamepress.gg//pokemon/147)
+processing #148 Dragonair (https://pokemongo.gamepress.gg//pokemon/148)
+processing #149 Dragonite (https://pokemongo.gamepress.gg//pokemon/149)
+processing #150 Mewtwo (https://pokemongo.gamepress.gg//pokemon/150)
+processing #151 Mew (https://pokemongo.gamepress.gg//pokemon/151)
+
+step #4 output (copy everything below this line on your fancy sgdb)
+==================== are you seeing this line? ====================
+use pogym
+
+INSERT INTO [types] ([type_id],[type]) VALUES
 (1, 'Normal')
 ,(2, 'Fighting')
 ,(3, 'Flying')
@@ -21,12 +183,12 @@ INSERT INTO [types] ([type_id],[type]) VALUES
 ,(18, 'Fairy')
 ;
 
-INSERT INTO [attacks_types] ([attack_type_id],[type]) VALUES 
+INSERT INTO [attacks_types] ([attack_type_id],[type]) VALUES
 (1,'Quick Move')
 ,(2,'Charge Move')
 ;
 
-INSERT INTO [attacks] ([attack_id],[name],[attack_type_id],[type_id],[damage],[damageps],[move_cooldown],[energyps],[charge]) VALUES 
+INSERT INTO [attacks] ([attack_id],[name],[attack_type_id],[type_id],[damage],[damageps],[move_cooldown],[energyps],[charge]) VALUES
 (1,'Splash',1,11,0,0.00,1.23,0.00,0)
 ,(2,'Fury Cutter',1,7,3,7.50,0.40,15.00,0)
 ,(3,'Low Kick',1,2,5,8.33,0.60,11.67,0)
@@ -153,7 +315,7 @@ INSERT INTO [attacks] ([attack_id],[name],[attack_type_id],[type_id],[damage],[d
 ,(124,'Hyper Beam',2,1,120,24.00,5.00,0.00,1)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (1,'Bulbasaur','/sites/default/files/styles/pokemon_small/public/2016-08/1_0.png','/sites/default/files/styles/240w/public/2016-08/1_0.png','/pokemon/1',0.70,6.90,1071,126,126,90)
 ;
 
@@ -170,7 +332,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (1,81)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (1,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (2,'Ivysaur','/sites/default/files/styles/pokemon_small/public/2016-08/2.png','/sites/default/files/styles/240w/public/2016-08/2.png','/pokemon/2',1.00,13.00,1632,156,158,120)
 ;
 
@@ -187,7 +349,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (2,102)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (2,123)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (3,'Venusaur','/sites/default/files/styles/pokemon_small/public/2016-07/3.png','/sites/default/files/styles/240w/public/2016-07/3.png','/pokemon/3',2.00,100.00,2580,198,200,160)
 ;
 
@@ -204,7 +366,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (3,102)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (3,123)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (4,'Charmander','/sites/default/files/styles/pokemon_small/public/2016-07/4.png','/sites/default/files/styles/240w/public/2016-07/4.png','/pokemon/4',0.60,8.50,955,128,108,78)
 ;
 
@@ -220,7 +382,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (4,100)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (4,55)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (5,'Charmeleon','/sites/default/files/styles/pokemon_small/public/2016-07/5.png','/sites/default/files/styles/240w/public/2016-07/5.png','/pokemon/5',1.10,19.00,1557,160,140,116)
 ;
 
@@ -236,7 +398,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (5,63)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (5,100)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (6,'Charizard','/sites/default/files/styles/pokemon_small/public/2016-07/6.png','/sites/default/files/styles/240w/public/2016-07/6.png','/pokemon/6',1.70,90.50,2602,212,182,156)
 ;
 
@@ -253,7 +415,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (6,119)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (6,100)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (7,'Squirtle','/sites/default/files/styles/pokemon_small/public/2016-07/7.png','/sites/default/files/styles/240w/public/2016-07/7.png','/pokemon/7',0.50,9.00,1008,112,142,88)
 ;
 
@@ -269,7 +431,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (7,89)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (7,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (8,'Wartortle','/sites/default/files/styles/pokemon_small/public/2016-07/8.png','/sites/default/files/styles/240w/public/2016-07/8.png','/pokemon/8',1.00,22.50,1582,144,176,118)
 ;
 
@@ -285,7 +447,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (8,118)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (8,108)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (9,'Blastoise','/sites/default/files/styles/pokemon_small/public/2016-07/9.png','/sites/default/files/styles/240w/public/2016-07/9.png','/pokemon/9',1.60,85.50,2542,186,222,158)
 ;
 
@@ -301,7 +463,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (9,118)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (9,108)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (10,'Caterpie','/sites/default/files/styles/pokemon_small/public/2016-07/10.png','/sites/default/files/styles/240w/public/2016-07/10.png','/pokemon/10',0.30,2.00,443,62,66,90)
 ;
 
@@ -315,7 +477,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (10,4)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (10,40)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (11,'Metapod','/sites/default/files/styles/pokemon_small/public/2016-07/11.png','/sites/default/files/styles/240w/public/2016-07/11.png','/pokemon/11',0.70,9.90,477,56,86,100)
 ;
 
@@ -329,7 +491,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (11,4)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (11,40)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (12,'Butterfree','/sites/default/files/styles/pokemon_small/public/2016-07/12.png','/sites/default/files/styles/240w/public/2016-07/12.png','/pokemon/12',1.10,32.00,1454,144,144,120)
 ;
 
@@ -346,7 +508,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (12,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (12,92)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (13,'Weedle','/sites/default/files/styles/pokemon_small/public/2016-07/13.png','/sites/default/files/styles/240w/public/2016-07/13.png','/pokemon/13',0.30,3.20,449,68,64,80)
 ;
 
@@ -361,7 +523,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (13,10)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (13,40)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (14,'Kakuna','/sites/default/files/styles/pokemon_small/public/2016-07/14.png','/sites/default/files/styles/240w/public/2016-07/14.png','/pokemon/14',0.60,10.00,485,62,82,90)
 ;
 
@@ -376,7 +538,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (14,10)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (14,40)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (15,'Beedrill','/sites/default/files/styles/pokemon_small/public/2016-07/15.png','/sites/default/files/styles/240w/public/2016-07/15.png','/pokemon/15',1.00,29.50,1439,144,130,130)
 ;
 
@@ -393,7 +555,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (15,102)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (15,76)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (16,'Pidgey','/sites/default/files/styles/pokemon_small/public/2016-07/16.png','/sites/default/files/styles/240w/public/2016-07/16.png','/pokemon/16',0.30,1.80,679,94,90,80)
 ;
 
@@ -410,7 +572,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (16,66)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (16,42)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (17,'Pidgeotto','/sites/default/files/styles/pokemon_small/public/2016-07/17.png','/sites/default/files/styles/240w/public/2016-07/17.png','/pokemon/17',1.10,30.00,1223,126,122,126)
 ;
 
@@ -427,7 +589,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (17,66)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (17,42)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (18,'Pidgeot','/sites/default/files/styles/pokemon_small/public/2016-07/18.png','/sites/default/files/styles/240w/public/2016-07/18.png','/pokemon/18',1.50,39.50,2091,170,166,166)
 ;
 
@@ -444,7 +606,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (18,66)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (18,113)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (19,'Rattata','/sites/default/files/styles/pokemon_small/public/2016-07/19.png','/sites/default/files/styles/240w/public/2016-07/19.png','/pokemon/19',0.30,3.50,581,92,86,60)
 ;
 
@@ -460,7 +622,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (19,110)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (19,73)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (20,'Raticate','/sites/default/files/styles/pokemon_small/public/2016-07/20.png','/sites/default/files/styles/240w/public/2016-07/20.png','/pokemon/20',0.70,18.50,1444,146,150,110)
 ;
 
@@ -476,7 +638,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (20,124)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (20,73)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (21,'Spearow','/sites/default/files/styles/pokemon_small/public/2016-07/21.png','/sites/default/files/styles/240w/public/2016-07/21.png','/pokemon/21',0.30,2.00,686,102,78,80)
 ;
 
@@ -493,7 +655,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (21,85)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (21,42)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (22,'Fearow','/sites/default/files/styles/pokemon_small/public/2016-07/22.png','/sites/default/files/styles/240w/public/2016-07/22.png','/pokemon/22',1.20,38.00,1746,168,146,130)
 ;
 
@@ -510,7 +672,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (22,42)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (22,93)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (23,'Ekans','/sites/default/files/styles/pokemon_small/public/2016-07/23.png','/sites/default/files/styles/240w/public/2016-07/23.png','/pokemon/23',2.00,6.90,824,112,112,70)
 ;
 
@@ -526,7 +688,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (23,102)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (23,49)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (24,'Arbok','/sites/default/files/styles/pokemon_small/public/2016-07/24.png','/sites/default/files/styles/240w/public/2016-07/24.png','/pokemon/24',3.50,65.00,1767,166,166,120)
 ;
 
@@ -542,7 +704,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (24,105)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (24,109)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (25,'Pikachu','/sites/default/files/styles/pokemon_small/public/2016-07/25.png','/sites/default/files/styles/240w/public/2016-07/25.png','/pokemon/25',0.40,6.00,887,124,108,70)
 ;
 
@@ -558,7 +720,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (25,121)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (25,101)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (26,'Raichu','/sites/default/files/styles/pokemon_small/public/2016-07/26.png','/sites/default/files/styles/240w/public/2016-07/26.png','/pokemon/26',0.80,30.00,2028,200,154,120)
 ;
 
@@ -574,7 +736,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (26,121)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (26,86)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (27,'Sandshrew','/sites/default/files/styles/pokemon_small/public/2016-07/27.png','/sites/default/files/styles/240w/public/2016-07/27.png','/pokemon/27',0.60,12.00,798,90,114,100)
 ;
 
@@ -590,7 +752,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (27,94)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (27,70)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (28,'Sandslash','/sites/default/files/styles/pokemon_small/public/2016-07/28.png','/sites/default/files/styles/240w/public/2016-07/28.png','/pokemon/28',1.00,29.50,1810,150,172,150)
 ;
 
@@ -606,7 +768,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (28,122)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (28,70)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (29,'Nidoran♀','/sites/default/files/styles/pokemon_small/public/2016-07/29.png','/sites/default/files/styles/240w/public/2016-07/29.png','/pokemon/29',0.40,7.00,876,100,104,110)
 ;
 
@@ -622,7 +784,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (29,48)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (29,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (30,'Nidorina','/sites/default/files/styles/pokemon_small/public/2016-07/30.png','/sites/default/files/styles/240w/public/2016-07/30.png','/pokemon/30',0.80,20.00,1404,132,136,140)
 ;
 
@@ -638,7 +800,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (30,48)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (30,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (31,'Nidoqueen','/sites/default/files/styles/pokemon_small/public/2016-07/31.png','/sites/default/files/styles/240w/public/2016-07/31.png','/pokemon/31',1.30,60.00,2485,184,190,180)
 ;
 
@@ -655,7 +817,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (31,109)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (31,116)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (32,'Nidoran♂','/sites/default/files/styles/pokemon_small/public/2016-07/32.png','/sites/default/files/styles/240w/public/2016-07/32.png','/pokemon/32',0.50,9.00,843,110,94,92)
 ;
 
@@ -671,7 +833,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (32,47)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (32,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (33,'Nidorino','/sites/default/files/styles/pokemon_small/public/2016-07/33.png','/sites/default/files/styles/240w/public/2016-07/33.png','/pokemon/33',0.90,19.50,1372,142,128,122)
 ;
 
@@ -687,7 +849,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (33,47)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (33,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (34,'Nidoking','/sites/default/files/styles/pokemon_small/public/2016-07/34.png','/sites/default/files/styles/240w/public/2016-07/34.png','/pokemon/34',1.40,62.00,2475,204,170,162)
 ;
 
@@ -704,7 +866,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (34,115)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (34,109)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (35,'Clefairy','/sites/default/files/styles/pokemon_small/public/2016-07/35.png','/sites/default/files/styles/240w/public/2016-07/35.png','/pokemon/35',0.60,7.50,1200,116,124,140)
 ;
 
@@ -720,7 +882,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (35,51)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (35,117)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (36,'Clefable','/sites/default/files/styles/pokemon_small/public/2016-07/36.png','/sites/default/files/styles/240w/public/2016-07/36.png','/pokemon/36',1.30,40.00,2397,178,178,190)
 ;
 
@@ -736,7 +898,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (36,117)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (36,96)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (37,'Vulpix','/sites/default/files/styles/pokemon_small/public/2016-07/37.png','/sites/default/files/styles/240w/public/2016-07/37.png','/pokemon/37',0.60,9.90,831,106,118,76)
 ;
 
@@ -752,7 +914,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (37,100)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (37,55)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (38,'Ninetales','/sites/default/files/styles/pokemon_small/public/2016-07/38.png','/sites/default/files/styles/240w/public/2016-07/38.png','/pokemon/38',1.10,19.90,2188,176,194,146)
 ;
 
@@ -768,7 +930,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (38,100)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (38,114)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (39,'Jigglypuff','/sites/default/files/styles/pokemon_small/public/2016-07/39.png','/sites/default/files/styles/240w/public/2016-07/39.png','/pokemon/39',0.50,5.50,917,98,54,230)
 ;
 
@@ -785,7 +947,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (39,97)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (39,51)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (40,'Wigglytuff','/sites/default/files/styles/pokemon_small/public/2016-07/40.png','/sites/default/files/styles/240w/public/2016-07/40.png','/pokemon/40',1.00,12.00,2177,168,108,280)
 ;
 
@@ -802,7 +964,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (40,124)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (40,98)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (41,'Zubat','/sites/default/files/styles/pokemon_small/public/2016-07/41.png','/sites/default/files/styles/240w/public/2016-07/41.png','/pokemon/41',0.80,7.50,642,88,90,80)
 ;
 
@@ -819,7 +981,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (41,48)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (41,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (42,'Golbat','/sites/default/files/styles/pokemon_small/public/2016-07/42.png','/sites/default/files/styles/240w/public/2016-07/42.png','/pokemon/42',1.60,55.00,1921,164,164,150)
 ;
 
@@ -836,7 +998,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (42,48)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (42,59)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (43,'Oddish','/sites/default/files/styles/pokemon_small/public/2016-07/43.png','/sites/default/files/styles/240w/public/2016-07/43.png','/pokemon/43',0.50,5.40,1148,134,130,90)
 ;
 
@@ -853,7 +1015,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (43,81)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (43,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (44,'Gloom','/sites/default/files/styles/pokemon_small/public/2016-07/44.png','/sites/default/files/styles/240w/public/2016-07/44.png','/pokemon/44',0.80,8.60,1689,162,158,120)
 ;
 
@@ -870,7 +1032,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (44,106)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (44,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (45,'Vileplume','/sites/default/files/styles/pokemon_small/public/2016-07/45.png','/sites/default/files/styles/240w/public/2016-07/45.png','/pokemon/45',1.20,18.60,2492,202,190,150)
 ;
 
@@ -887,7 +1049,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (45,106)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (45,123)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (46,'Paras','/sites/default/files/styles/pokemon_small/public/2016-07/46.png','/sites/default/files/styles/240w/public/2016-07/46.png','/pokemon/46',0.30,5.40,916,122,120,70)
 ;
 
@@ -904,7 +1066,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (46,81)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (46,76)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (47,'Parasect','/sites/default/files/styles/pokemon_small/public/2016-07/47.png','/sites/default/files/styles/240w/public/2016-07/47.png','/pokemon/47',1.00,29.50,1747,162,170,120)
 ;
 
@@ -921,7 +1083,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (47,123)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (47,76)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (48,'Venonat','/sites/default/files/styles/pokemon_small/public/2016-07/48.png','/sites/default/files/styles/240w/public/2016-07/48.png','/pokemon/48',1.00,30.00,1029,108,118,120)
 ;
 
@@ -938,7 +1100,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (48,79)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (48,92)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (49,'Venomoth','/sites/default/files/styles/pokemon_small/public/2016-07/49.png','/sites/default/files/styles/240w/public/2016-07/49.png','/pokemon/49',1.50,12.50,1890,172,154,140)
 ;
 
@@ -955,7 +1117,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (49,48)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (49,96)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (50,'Diglett','/sites/default/files/styles/pokemon_small/public/2016-07/50.png','/sites/default/files/styles/240w/public/2016-07/50.png','/pokemon/50',0.20,0.80,456,108,86,20)
 ;
 
@@ -971,7 +1133,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (50,67)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (50,70)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (51,'Dugtrio','/sites/default/files/styles/pokemon_small/public/2016-07/51.png','/sites/default/files/styles/240w/public/2016-07/51.png','/pokemon/51',0.70,33.30,1168,148,140,70)
 ;
 
@@ -987,7 +1149,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (51,67)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (51,116)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (52,'Meowth','/sites/default/files/styles/pokemon_small/public/2016-07/52.png','/sites/default/files/styles/240w/public/2016-07/52.png','/pokemon/52',0.40,4.20,756,104,94,80)
 ;
 
@@ -1003,7 +1165,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (52,88)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (52,71)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (53,'Persian','/sites/default/files/styles/pokemon_small/public/2016-07/53.png','/sites/default/files/styles/240w/public/2016-07/53.png','/pokemon/53',1.00,32.00,1631,156,146,130)
 ;
 
@@ -1019,7 +1181,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (53,98)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (53,87)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (54,'Psyduck','/sites/default/files/styles/pokemon_small/public/2016-07/54.png','/sites/default/files/styles/240w/public/2016-07/54.png','/pokemon/54',0.80,19.60,1109,132,112,100)
 ;
 
@@ -1035,7 +1197,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (54,103)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (54,79)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (55,'Golduck','/sites/default/files/styles/pokemon_small/public/2016-07/55.png','/sites/default/files/styles/240w/public/2016-07/55.png','/pokemon/55',1.70,76.60,2386,194,176,160)
 ;
 
@@ -1051,7 +1213,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (55,108)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (55,96)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (56,'Mankey','/sites/default/files/styles/pokemon_small/public/2016-07/56.png','/sites/default/files/styles/240w/public/2016-07/56.png','/pokemon/56',0.50,28.00,878,122,96,80)
 ;
 
@@ -1067,7 +1229,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (56,103)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (56,57)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (57,'Primeape','/sites/default/files/styles/pokemon_small/public/2016-07/57.png','/sites/default/files/styles/240w/public/2016-07/57.png','/pokemon/57',1.00,32.00,1864,178,150,130)
 ;
 
@@ -1083,7 +1245,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (57,57)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (57,71)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (58,'Growlithe','/sites/default/files/styles/pokemon_small/public/2016-07/58.png','/sites/default/files/styles/240w/public/2016-07/58.png','/pokemon/58',0.70,19.00,1335,156,110,110)
 ;
 
@@ -1099,7 +1261,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (58,83)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (58,100)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (59,'Arcanine','/sites/default/files/styles/pokemon_small/public/2016-07/59.png','/sites/default/files/styles/240w/public/2016-07/59.png','/pokemon/59',1.90,155.00,2983,230,180,180)
 ;
 
@@ -1115,7 +1277,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (59,119)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (59,100)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (60,'Poliwag','/sites/default/files/styles/pokemon_small/public/2016-07/60.png','/sites/default/files/styles/240w/public/2016-07/60.png','/pokemon/60',0.60,12.40,795,108,98,80)
 ;
 
@@ -1131,7 +1293,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (60,60)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (60,67)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (61,'Poliwhirl','/sites/default/files/styles/pokemon_small/public/2016-07/61.png','/sites/default/files/styles/240w/public/2016-07/61.png','/pokemon/61',1.00,20.00,1340,132,132,130)
 ;
 
@@ -1147,7 +1309,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (61,67)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (61,95)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (62,'Poliwrath','/sites/default/files/styles/pokemon_small/public/2016-07/62.png','/sites/default/files/styles/240w/public/2016-07/62.png','/pokemon/62',1.30,54.00,2505,180,202,180)
 ;
 
@@ -1164,7 +1326,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (62,91)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (62,58)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (63,'Abra','/sites/default/files/styles/pokemon_small/public/2016-07/63.png','/sites/default/files/styles/240w/public/2016-07/63.png','/pokemon/63',0.90,19.50,600,110,76,50)
 ;
 
@@ -1179,7 +1341,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (63,90)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (63,92)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (64,'Kadabra','/sites/default/files/styles/pokemon_small/public/2016-07/64.png','/sites/default/files/styles/240w/public/2016-07/64.png','/pokemon/64',1.30,56.50,1131,150,112,80)
 ;
 
@@ -1195,7 +1357,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (64,79)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (64,90)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (65,'Alakazam','/sites/default/files/styles/pokemon_small/public/2016-07/65.png','/sites/default/files/styles/240w/public/2016-07/65.png','/pokemon/65',1.50,48.00,1813,186,152,110)
 ;
 
@@ -1211,7 +1373,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (65,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (65,90)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (66,'Machop','/sites/default/files/styles/pokemon_small/public/2016-07/66.png','/sites/default/files/styles/240w/public/2016-07/66.png','/pokemon/66',0.80,19.50,1089,118,96,140)
 ;
 
@@ -1227,7 +1389,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (66,103)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (66,57)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (67,'Machoke','/sites/default/files/styles/pokemon_small/public/2016-07/67.png','/sites/default/files/styles/240w/public/2016-07/67.png','/pokemon/67',1.50,70.50,1760,154,144,160)
 ;
 
@@ -1243,7 +1405,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (67,103)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (67,58)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (68,'Machamp','/sites/default/files/styles/pokemon_small/public/2016-07/68.png','/sites/default/files/styles/240w/public/2016-07/68.png','/pokemon/68',1.60,130.00,2594,198,180,180)
 ;
 
@@ -1259,7 +1421,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (68,116)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (68,58)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (69,'Bellsprout','/sites/default/files/styles/pokemon_small/public/2016-07/69.png','/sites/default/files/styles/240w/public/2016-07/69.png','/pokemon/69',0.70,4.00,1117,158,78,100)
 ;
 
@@ -1276,7 +1438,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (69,102)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (69,49)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (70,'Weepinbell','/sites/default/files/styles/pokemon_small/public/2016-07/70_0.png','/sites/default/files/styles/240w/public/2016-07/70_0.png','/pokemon/70',1.00,6.40,1723,190,110,130)
 ;
 
@@ -1293,7 +1455,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (70,81)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (70,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (71,'Victreebel','/sites/default/files/styles/pokemon_small/public/2016-07/71.png','/sites/default/files/styles/240w/public/2016-07/71.png','/pokemon/71',1.70,15.50,2530,222,152,160)
 ;
 
@@ -1310,7 +1472,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (71,123)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (71,99)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (72,'Tentacool','/sites/default/files/styles/pokemon_small/public/2016-07/72.png','/sites/default/files/styles/240w/public/2016-07/72.png','/pokemon/72',0.90,45.50,905,106,136,80)
 ;
 
@@ -1327,7 +1489,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (72,74)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (72,49)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (73,'Tentacruel','/sites/default/files/styles/pokemon_small/public/2016-07/73.png','/sites/default/files/styles/240w/public/2016-07/73.png','/pokemon/73',1.60,55.00,2220,170,196,160)
 ;
 
@@ -1344,7 +1506,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (73,118)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (73,109)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (74,'Geodude','/sites/default/files/styles/pokemon_small/public/2016-07/74.png','/sites/default/files/styles/240w/public/2016-07/74.png','/pokemon/74',0.40,20.00,849,106,118,80)
 ;
 
@@ -1361,7 +1523,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (74,94)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (74,70)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (75,'Graveler','/sites/default/files/styles/pokemon_small/public/2016-07/75.png','/sites/default/files/styles/240w/public/2016-07/75.png','/pokemon/75',1.00,105.00,1433,142,156,110)
 ;
 
@@ -1378,7 +1540,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (75,94)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (75,116)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (76,'Golem','/sites/default/files/styles/pokemon_small/public/2016-07/76.png','/sites/default/files/styles/240w/public/2016-07/76.png','/pokemon/76',1.40,300.00,2303,176,198,160)
 ;
 
@@ -1395,7 +1557,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (76,122)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (76,116)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (77,'Ponyta','/sites/default/files/styles/pokemon_small/public/2016-07/77.png','/sites/default/files/styles/240w/public/2016-07/77.png','/pokemon/77',1.00,30.00,1516,168,138,100)
 ;
 
@@ -1411,7 +1573,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (77,83)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (77,55)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (78,'Rapidash','/sites/default/files/styles/pokemon_small/public/2016-07/78.png','/sites/default/files/styles/240w/public/2016-07/78.png','/pokemon/78',1.70,95.00,2199,200,170,130)
 ;
 
@@ -1427,7 +1589,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (78,114)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (78,93)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (79,'Slowpoke','/sites/default/files/styles/pokemon_small/public/2016-07/79.png','/sites/default/files/styles/240w/public/2016-07/79.png','/pokemon/79',1.20,36.00,1218,110,110,180)
 ;
 
@@ -1444,7 +1606,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (79,82)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (79,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (80,'Slowbro','/sites/default/files/styles/pokemon_small/public/2016-07/80_0.png','/sites/default/files/styles/240w/public/2016-07/80_0.png','/pokemon/80',1.60,78.50,2597,184,198,190)
 ;
 
@@ -1461,7 +1623,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (80,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (80,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (81,'Magnemite','/sites/default/files/styles/pokemon_small/public/2016-07/81.png','/sites/default/files/styles/240w/public/2016-07/81.png','/pokemon/81',0.30,6.00,890,128,138,50)
 ;
 
@@ -1478,7 +1640,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (81,61)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (81,101)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (82,'Magneton','/sites/default/files/styles/pokemon_small/public/2016-07/82.png','/sites/default/files/styles/240w/public/2016-07/82.png','/pokemon/82',1.00,60.00,1879,186,180,100)
 ;
 
@@ -1495,8 +1657,8 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (82,104)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (82,61)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
-(83,'Farfetch''d','/sites/default/files/styles/pokemon_small/public/2016-07/83.png','/sites/default/files/styles/240w/public/2016-07/83.png','/pokemon/83',0.80,15.00,1263,138,132,104)
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
+(83,'Farfetch'd','/sites/default/files/styles/pokemon_small/public/2016-07/83.png','/sites/default/files/styles/240w/public/2016-07/83.png','/pokemon/83',0.80,15.00,1263,138,132,104)
 ;
 
 INSERT INTO [dbo].[pokemons_types] ([pokemon_id],[type_id]) VALUES (83,3)
@@ -1512,7 +1674,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (83,66)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (83,99)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (84,'Doduo','/sites/default/files/styles/pokemon_small/public/2016-07/84.png','/sites/default/files/styles/240w/public/2016-07/84.png','/pokemon/84',1.40,39.20,855,126,96,70)
 ;
 
@@ -1529,7 +1691,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (84,85)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (84,62)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (85,'Dodrio','/sites/default/files/styles/pokemon_small/public/2016-07/85.png','/sites/default/files/styles/240w/public/2016-07/85.png','/pokemon/85',1.80,85.20,1836,182,150,120)
 ;
 
@@ -1546,7 +1708,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (85,66)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (85,85)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (86,'Seel','/sites/default/files/styles/pokemon_small/public/2016-07/86.png','/sites/default/files/styles/240w/public/2016-07/86.png','/pokemon/86',1.10,90.00,1107,104,138,130)
 ;
 
@@ -1562,7 +1724,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (86,89)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (86,50)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (87,'Dewgong','/sites/default/files/styles/pokemon_small/public/2016-07/87.png','/sites/default/files/styles/240w/public/2016-07/87.png','/pokemon/87',1.70,120.00,2145,156,192,180)
 ;
 
@@ -1579,7 +1741,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (87,120)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (87,50)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (88,'Grimer','/sites/default/files/styles/pokemon_small/public/2016-07/88.png','/sites/default/files/styles/240w/public/2016-07/88.png','/pokemon/88',0.90,30.00,1284,124,110,160)
 ;
 
@@ -1595,7 +1757,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (88,68)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (88,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (89,'Muk','/sites/default/files/styles/pokemon_small/public/2016-07/89.png','/sites/default/files/styles/240w/public/2016-07/89.png','/pokemon/89',1.20,30.00,2602,180,188,210)
 ;
 
@@ -1611,7 +1773,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (89,105)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (89,109)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (90,'Shellder','/sites/default/files/styles/pokemon_small/public/2016-07/90.png','/sites/default/files/styles/240w/public/2016-07/90.png','/pokemon/90',0.30,4.00,822,120,112,60)
 ;
 
@@ -1627,7 +1789,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (90,50)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (90,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (91,'Cloyster','/sites/default/files/styles/pokemon_small/public/2016-07/91.png','/sites/default/files/styles/240w/public/2016-07/91.png','/pokemon/91',1.50,132.50,2052,196,196,100)
 ;
 
@@ -1644,7 +1806,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (91,118)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (91,50)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (92,'Gastly','/sites/default/files/styles/pokemon_small/public/2016-07/92.png','/sites/default/files/styles/240w/public/2016-07/92.png','/pokemon/92',1.30,0.10,804,136,82,60)
 ;
 
@@ -1661,7 +1823,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (92,102)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (92,59)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (93,'Haunter','/sites/default/files/styles/pokemon_small/public/2016-07/93.png','/sites/default/files/styles/240w/public/2016-07/93.png','/pokemon/93',1.60,0.10,1380,172,118,90)
 ;
 
@@ -1678,7 +1840,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (93,90)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (93,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (94,'Gengar','/sites/default/files/styles/pokemon_small/public/2016-07/94.png','/sites/default/files/styles/240w/public/2016-07/94.png','/pokemon/94',1.50,40.50,2078,204,156,120)
 ;
 
@@ -1695,7 +1857,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (94,90)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (94,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (95,'Onix','/sites/default/files/styles/pokemon_small/public/2016-07/95.png','/sites/default/files/styles/240w/public/2016-07/95.png','/pokemon/95',8.80,210.00,857,90,186,70)
 ;
 
@@ -1712,7 +1874,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (95,94)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (95,116)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (96,'Drowzee','/sites/default/files/styles/pokemon_small/public/2016-07/96.png','/sites/default/files/styles/240w/public/2016-07/96.png','/pokemon/96',1.00,32.40,1075,104,140,120)
 ;
 
@@ -1728,7 +1890,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (96,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (96,82)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (97,'Hypno','/sites/default/files/styles/pokemon_small/public/2016-07/97.png','/sites/default/files/styles/240w/public/2016-07/97.png','/pokemon/97',1.60,75.60,2184,162,196,170)
 ;
 
@@ -1744,7 +1906,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (97,82)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (97,90)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (98,'Krabby','/sites/default/files/styles/pokemon_small/public/2016-07/98.png','/sites/default/files/styles/240w/public/2016-07/98.png','/pokemon/98',0.40,6.50,792,116,110,60)
 ;
 
@@ -1760,7 +1922,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (98,44)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (98,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (99,'Kingler','/sites/default/files/styles/pokemon_small/public/2016-07/99.png','/sites/default/files/styles/240w/public/2016-07/99.png','/pokemon/99',1.30,60.00,1823,178,168,110)
 ;
 
@@ -1776,7 +1938,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (99,74)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (99,76)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (100,'Voltorb','/sites/default/files/styles/pokemon_small/public/2016-07/100.png','/sites/default/files/styles/240w/public/2016-07/100.png','/pokemon/100',0.50,10.40,839,102,124,80)
 ;
 
@@ -1792,7 +1954,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (100,92)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (100,101)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (101,'Electrode','/sites/default/files/styles/pokemon_small/public/2016-07/101.png','/sites/default/files/styles/240w/public/2016-07/101.png','/pokemon/101',1.20,66.60,1646,150,174,120)
 ;
 
@@ -1808,7 +1970,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (101,124)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (101,101)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (102,'Exeggcute','/sites/default/files/styles/pokemon_small/public/2016-07/102.png','/sites/default/files/styles/240w/public/2016-07/102.png','/pokemon/102',0.40,2.50,1099,110,132,120)
 ;
 
@@ -1824,7 +1986,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (102,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (102,81)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (103,'Exeggutor','/sites/default/files/styles/pokemon_small/public/2016-07/103.png','/sites/default/files/styles/240w/public/2016-07/103.png','/pokemon/103',2.00,120.00,2955,232,164,190)
 ;
 
@@ -1841,7 +2003,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (103,81)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (103,123)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (104,'Cubone','/sites/default/files/styles/pokemon_small/public/2016-07/104.png','/sites/default/files/styles/240w/public/2016-07/104.png','/pokemon/104',0.40,6.50,1006,102,150,100)
 ;
 
@@ -1857,7 +2019,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (104,75)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (104,110)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (105,'Marowak','/sites/default/files/styles/pokemon_small/public/2016-07/105.png','/sites/default/files/styles/240w/public/2016-07/105.png','/pokemon/105',1.00,45.00,1656,140,202,120)
 ;
 
@@ -1873,7 +2035,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (105,110)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (105,122)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (106,'Hitmonlee','/sites/default/files/styles/pokemon_small/public/2016-07/106.png','/sites/default/files/styles/240w/public/2016-07/106.png','/pokemon/106',1.50,49.80,1492,148,172,100)
 ;
 
@@ -1889,7 +2051,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (106,57)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (106,116)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (107,'Hitmonchan','/sites/default/files/styles/pokemon_small/public/2016-07/107.png','/sites/default/files/styles/240w/public/2016-07/107.png','/pokemon/107',1.40,50.20,1516,138,204,100)
 ;
 
@@ -1906,7 +2068,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (107,91)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (107,86)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (108,'Lickitung','/sites/default/files/styles/pokemon_small/public/2016-07/108.png','/sites/default/files/styles/240w/public/2016-07/108.png','/pokemon/108',1.20,65.50,1626,126,160,180)
 ;
 
@@ -1922,7 +2084,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (108,111)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (108,65)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (109,'Koffing','/sites/default/files/styles/pokemon_small/public/2016-07/109.png','/sites/default/files/styles/240w/public/2016-07/109.png','/pokemon/109',0.60,1.00,1151,136,142,80)
 ;
 
@@ -1937,7 +2099,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (109,68)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (109,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (110,'Weezing','/sites/default/files/styles/pokemon_small/public/2016-07/110.png','/sites/default/files/styles/240w/public/2016-07/110.png','/pokemon/110',1.20,9.50,2250,190,198,130)
 ;
 
@@ -1952,7 +2114,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (110,90)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (110,102)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (111,'Rhyhorn','/sites/default/files/styles/pokemon_small/public/2016-07/111.png','/sites/default/files/styles/240w/public/2016-07/111.png','/pokemon/111',1.00,115.00,1182,110,116,160)
 ;
 
@@ -1969,7 +2131,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (111,47)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (111,65)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (112,'Rhydon','/sites/default/files/styles/pokemon_small/public/2016-07/112.png','/sites/default/files/styles/240w/public/2016-07/112.png','/pokemon/112',1.90,120.00,2243,166,160,210)
 ;
 
@@ -1986,7 +2148,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (112,115)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (112,116)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (113,'Chansey','/sites/default/files/styles/pokemon_small/public/2016-07/113.png','/sites/default/files/styles/240w/public/2016-07/113.png','/pokemon/113',1.10,34.60,675,40,60,500)
 ;
 
@@ -2002,7 +2164,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (113,124)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (113,96)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (114,'Tangela','/sites/default/files/styles/pokemon_small/public/2016-07/114.png','/sites/default/files/styles/240w/public/2016-07/114.png','/pokemon/114',1.00,35.00,1739,164,152,130)
 ;
 
@@ -2017,7 +2179,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (114,102)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (114,123)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (115,'Kangaskhan','/sites/default/files/styles/pokemon_small/public/2016-07/115.png','/sites/default/files/styles/240w/public/2016-07/115.png','/pokemon/115',2.20,80.00,2043,142,178,210)
 ;
 
@@ -2033,7 +2195,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (115,122)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (115,65)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (116,'Horsea','/sites/default/files/styles/pokemon_small/public/2016-07/116.png','/sites/default/files/styles/240w/public/2016-07/116.png','/pokemon/116',0.40,8.00,794,122,100,60)
 ;
 
@@ -2049,7 +2211,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (116,107)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (116,104)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (117,'Seadra','/sites/default/files/styles/pokemon_small/public/2016-07/117.png','/sites/default/files/styles/240w/public/2016-07/117.png','/pokemon/117',1.20,25.00,1713,176,150,110)
 ;
 
@@ -2065,7 +2227,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (117,107)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (117,118)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (118,'Goldeen','/sites/default/files/styles/pokemon_small/public/2016-07/118.png','/sites/default/files/styles/240w/public/2016-07/118.png','/pokemon/118',0.60,15.00,965,112,126,90)
 ;
 
@@ -2081,7 +2243,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (118,47)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (118,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (119,'Seaking','/sites/default/files/styles/pokemon_small/public/2016-07/119.png','/sites/default/files/styles/240w/public/2016-07/119.png','/pokemon/119',1.30,39.00,2043,172,160,160)
 ;
 
@@ -2097,7 +2259,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (119,115)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (119,93)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (120,'Staryu','/sites/default/files/styles/pokemon_small/public/2016-07/120.png','/sites/default/files/styles/240w/public/2016-07/120.png','/pokemon/120',1.10,80.00,937,130,128,60)
 ;
 
@@ -2113,7 +2275,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (120,87)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (120,62)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (121,'Starmie','/sites/default/files/styles/pokemon_small/public/2016-07/121.png','/sites/default/files/styles/240w/public/2016-07/121.png','/pokemon/121',1.10,80.00,2182,194,192,120)
 ;
 
@@ -2130,7 +2292,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (121,87)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (121,96)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (122,'Mr. Mime','/sites/default/files/styles/pokemon_small/public/2016-07/122.png','/sites/default/files/styles/240w/public/2016-07/122.png','/pokemon/122',1.30,54.50,1494,154,196,80)
 ;
 
@@ -2147,7 +2309,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (122,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (122,90)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (123,'Scyther','/sites/default/files/styles/pokemon_small/public/2016-07/123.png','/sites/default/files/styles/240w/public/2016-07/123.png','/pokemon/123',1.50,56.00,2073,176,180,140)
 ;
 
@@ -2164,7 +2326,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (123,71)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (123,76)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (124,'Jynx','/sites/default/files/styles/pokemon_small/public/2016-07/124.png','/sites/default/files/styles/240w/public/2016-07/124.png','/pokemon/124',1.40,40.60,1716,172,134,130)
 ;
 
@@ -2181,7 +2343,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (124,91)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (124,82)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (125,'Electabuzz','/sites/default/files/styles/pokemon_small/public/2016-07/125.png','/sites/default/files/styles/240w/public/2016-07/125.png','/pokemon/125',1.10,30.00,2119,198,160,130)
 ;
 
@@ -2197,7 +2359,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (125,86)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (125,101)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (126,'Magmar','/sites/default/files/styles/pokemon_small/public/2016-07/126.png','/sites/default/files/styles/240w/public/2016-07/126.png','/pokemon/126',1.30,44.50,2265,214,158,130)
 ;
 
@@ -2213,7 +2375,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (126,80)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (126,100)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (127,'Pinsir','/sites/default/files/styles/pokemon_small/public/2016-07/127.png','/sites/default/files/styles/240w/public/2016-07/127.png','/pokemon/127',1.50,55.00,2121,184,186,130)
 ;
 
@@ -2229,7 +2391,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (127,44)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (127,76)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (128,'Tauros','/sites/default/files/styles/pokemon_small/public/2016-07/128.png','/sites/default/files/styles/240w/public/2016-07/128.png','/pokemon/128',1.40,88.40,1844,148,184,150)
 ;
 
@@ -2245,7 +2407,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (128,47)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (128,69)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (129,'Magikarp','/sites/default/files/styles/pokemon_small/public/2016-07/129.png','/sites/default/files/styles/240w/public/2016-07/129.png','/pokemon/129',0.90,10.00,262,42,84,40)
 ;
 
@@ -2258,7 +2420,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (129,1)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (129,40)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (130,'Gyarados','/sites/default/files/styles/pokemon_small/public/2016-07/130.png','/sites/default/files/styles/240w/public/2016-07/130.png','/pokemon/130',6.50,235.00,2688,192,196,190)
 ;
 
@@ -2274,7 +2436,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (130,118)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (130,42)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (131,'Lapras','/sites/default/files/styles/pokemon_small/public/2016-07/131.png','/sites/default/files/styles/240w/public/2016-07/131.png','/pokemon/131',2.50,220.00,2980,186,190,260)
 ;
 
@@ -2291,7 +2453,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (131,107)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (131,108)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (132,'Ditto','/sites/default/files/styles/pokemon_small/public/2016-07/132.png','/sites/default/files/styles/240w/public/2016-07/132.png','/pokemon/132',0.30,4.00,919,110,110,96)
 ;
 
@@ -2304,7 +2466,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (132,16)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (132,40)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (133,'Eevee','/sites/default/files/styles/pokemon_small/public/2016-07/133.png','/sites/default/files/styles/240w/public/2016-07/133.png','/pokemon/133',0.30,6.50,1077,114,128,110)
 ;
 
@@ -2320,7 +2482,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (133,110)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (133,62)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (134,'Vaporeon','/sites/default/files/styles/pokemon_small/public/2016-07/134.png','/sites/default/files/styles/240w/public/2016-07/134.png','/pokemon/134',1.00,29.00,2816,186,168,260)
 ;
 
@@ -2335,7 +2497,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (134,118)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (134,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (135,'Jolteon','/sites/default/files/styles/pokemon_small/public/2016-07/135.png','/sites/default/files/styles/240w/public/2016-07/135.png','/pokemon/135',0.80,24.50,2140,192,174,130)
 ;
 
@@ -2350,7 +2512,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (135,121)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (135,101)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (136,'Flareon','/sites/default/files/styles/pokemon_small/public/2016-07/136.png','/sites/default/files/styles/240w/public/2016-07/136.png','/pokemon/136',0.90,25.00,2643,238,178,130)
 ;
 
@@ -2365,7 +2527,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (136,100)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (136,114)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (137,'Porygon','/sites/default/files/styles/pokemon_small/public/2016-07/137.png','/sites/default/files/styles/240w/public/2016-07/137.png','/pokemon/137',0.80,36.50,1691,156,158,130)
 ;
 
@@ -2381,7 +2543,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (137,79)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (137,92)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (138,'Omanyte','/sites/default/files/styles/pokemon_small/public/2016-07/138.png','/sites/default/files/styles/240w/public/2016-07/138.png','/pokemon/138',0.40,7.50,1119,132,160,70)
 ;
 
@@ -2398,7 +2560,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (138,70)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (138,52)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (139,'Omastar','/sites/default/files/styles/pokemon_small/public/2016-07/139.png','/sites/default/files/styles/240w/public/2016-07/139.png','/pokemon/139',1.00,35.00,2233,180,202,140)
 ;
 
@@ -2415,7 +2577,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (139,118)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (139,94)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (140,'Kabuto','/sites/default/files/styles/pokemon_small/public/2016-07/140.png','/sites/default/files/styles/240w/public/2016-07/140.png','/pokemon/140',0.50,11.50,1104,148,142,60)
 ;
 
@@ -2432,7 +2594,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (140,43)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (140,70)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (141,'Kabutops','/sites/default/files/styles/pokemon_small/public/2016-07/141.png','/sites/default/files/styles/240w/public/2016-07/141.png','/pokemon/141',1.30,40.50,2130,190,190,120)
 ;
 
@@ -2449,7 +2611,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (141,116)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (141,74)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (142,'Aerodactyl','/sites/default/files/styles/pokemon_small/public/2016-07/142.png','/sites/default/files/styles/240w/public/2016-07/142.png','/pokemon/142',1.80,59.00,2165,182,162,160)
 ;
 
@@ -2466,7 +2628,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (142,124)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (142,69)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (143,'Snorlax','/sites/default/files/styles/pokemon_small/public/2016-07/143.png','/sites/default/files/styles/240w/public/2016-07/143.png','/pokemon/143',2.10,460.00,3112,180,180,320)
 ;
 
@@ -2482,7 +2644,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (143,122)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (143,124)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (144,'Articuno','/sites/default/files/styles/pokemon_small/public/2016-07/144.png','/sites/default/files/styles/240w/public/2016-07/144.png','/pokemon/144',1.70,55.40,2978,198,242,180)
 ;
 
@@ -2498,7 +2660,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (144,108)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (144,50)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (145,'Zapdos','/sites/default/files/styles/pokemon_small/public/2016-07/145.png','/sites/default/files/styles/240w/public/2016-07/145.png','/pokemon/145',1.60,52.60,3114,232,194,180)
 ;
 
@@ -2514,7 +2676,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (145,121)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (145,101)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (146,'Moltres','/sites/default/files/styles/pokemon_small/public/2016-07/146.png','/sites/default/files/styles/240w/public/2016-07/146.png','/pokemon/146',2.00,60.00,3240,242,194,180)
 ;
 
@@ -2530,7 +2692,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (146,100)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (146,114)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (147,'Dratini','/sites/default/files/styles/pokemon_small/public/2016-07/147.png','/sites/default/files/styles/240w/public/2016-07/147.png','/pokemon/147',1.80,3.30,983,128,110,82)
 ;
 
@@ -2545,7 +2707,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (147,42)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (147,49)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (148,'Dragonair','/sites/default/files/styles/pokemon_small/public/2016-07/148.png','/sites/default/files/styles/240w/public/2016-07/148.png','/pokemon/148',4.00,16.50,1747,170,152,122)
 ;
 
@@ -2560,7 +2722,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (148,107)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (148,49)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (149,'Dragonite','/sites/default/files/styles/pokemon_small/public/2016-07/149.png','/sites/default/files/styles/240w/public/2016-07/149.png','/pokemon/149',2.20,210.00,3500,250,212,182)
 ;
 
@@ -2577,7 +2739,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (149,107)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (149,124)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (150,'Mewtwo','/sites/default/files/styles/pokemon_small/public/2016-07/150.png','/sites/default/files/styles/240w/public/2016-07/150.png','/pokemon/150',2.00,122.00,4144,284,202,212)
 ;
 
@@ -2593,7 +2755,7 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (150,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (150,90)
 ;
 
-INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES 
+INSERT INTO [dbo].[pokemons] ([pokemon_id],[name],[icon],[image],[url],[height_avg],[weight_avg],[combatpower_max],[attack_base],[defense_base],[stamina_base]) VALUES
 (151,'Mew','/sites/default/files/styles/pokemon_small/public/2016-07/151.png','/sites/default/files/styles/240w/public/2016-07/151.png','/pokemon/151',0.40,4.00,3299,220,220,200)
 ;
 
@@ -2612,3 +2774,6 @@ INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (151,96)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (151,123)
 INSERT INTO [dbo].[pokemons_attacks] ([pokemon_id],[attack_id]) VALUES (151,121)
 ;
+
+
+Process finished with exit code 0

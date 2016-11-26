@@ -1,0 +1,46 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.space-rows>div {
+     margin-top:10px;
+}
+
+.space-row {
+     margin-top:10px;
+}
+
+/*
+h1,h2,h3 {
+    text-align: center;
+}
+
+.center {
+    align-content: center;
+}
+*/
