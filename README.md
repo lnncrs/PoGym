@@ -1,12 +1,9 @@
-# Universidade Federal do ABC
+# PoGym -  ferramenta auxiliar para batalhas no jogo &quot;Pokemon Go&quot;**
 
-**Bacharelado em Ciência da Computação – Banco de Dados (MC 3310)**
-
-**PoGym -  ferramenta auxiliar para batalhas no jogo &quot;Pokemon Go&quot;**
+Universidade Federal do ABC
+Bacharelado em Ciência da Computação – Banco de Dados (MC 3310) 2016 Q3
 
 Felipe Rigo Yoshimura,Lenin Cristi,Renato de Rezende Querino,Victor Fernandes
-
-
 
 19/10/2016
 
@@ -101,7 +98,7 @@ Figura 7 - Imagem conceitual da ferramenta com os Pokémon selecionados.
 
 ![](https://github.com/lnncrs/PoGym/blob/master/docs/images/pogym4.jpg?raw=true)
 
-Figura 8 - Imagem final da ferramenta atual em uso.
+Figura 8 - Imagem da ferramenta atualmente em uso.
 
 ## Análise de Requisitos
 
@@ -120,7 +117,13 @@ De acordo com a mecânica do jogo, os requisitos que puderam ser extraídos para
 
 O Diagrama Entidade Relacionamento que preenche os requisitos do problema é mostrado na figura 8.
 
-### Figura 8 – Diagrama Entidade Relacionamento.
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/diag1.jpg?raw=true)
+
+Figura 9 – Diagrama Entidade Relacionamento inicialmente apresentado.
+
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/diag2.jpg?raw=true)
+
+Figura 10 – Diagrama Entidade Relacionamento atual.
 
 O diagrama é dividido em três tipo-entidade: &quot;Pokémon&quot;, &quot;Tipo&quot; e &quot;Ataques&quot;, às quais se relacionam utilizando três tipo-relacionamento: &quot;Conhece&quot;, &quot;É de&quot; e &quot;Possui&quot;. Essa estrutura foi adotada com o intuito de evitar um tipo-relacionamento ternário.
 
