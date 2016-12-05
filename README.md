@@ -40,6 +40,7 @@ Sabe-se que ao se desenvolver uma nova ferramenta, o fator determinante de seu s
 
 O jogo basicamente coloca o usuário no papel de um treinador de Pokémons, em um mapa que utiliza o serviço de &quot;Maps&quot; do Google no qual você deve se desloca fisicamente para se movimentar no jogo. Neste mapa existem locais pré-determinados para coleta de itens que são denominados &quot;Pokestops&quot; e locais para batalhar que são denominados &quot;Ginásios&quot;. Como mostrado na figura 1, os cubos e argolas representam Pokéstops e as plataformas suspensas são os ginásios.
 
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/screen.jpg?raw=true)
 ### Figura 1 - Captura de tela de um dos membros do grupo no parque do Ibirapuera, na região de SP.
 
  As criaturas chamadas de Pokémons aparecem de maneira aleatória em diferentes locais, com diferentes distribuições populacionais de acordo a região. Elas podem ser pegas arremessando os itens chamados &quot;pokébolas&quot;, arrastando-os através do &quot;touch screen&quot; do celular. Esse é o único momento do jogo no qual se tem a opção de se utilizar a realidade aumentada na câmera, como mostrado na figura 2.
