@@ -40,30 +40,35 @@ Sabe-se que ao se desenvolver uma nova ferramenta, o fator determinante de seu s
 
 O jogo basicamente coloca o usuário no papel de um treinador de Pokémons, em um mapa que utiliza o serviço de &quot;Maps&quot; do Google no qual você deve se desloca fisicamente para se movimentar no jogo. Neste mapa existem locais pré-determinados para coleta de itens que são denominados &quot;Pokestops&quot; e locais para batalhar que são denominados &quot;Ginásios&quot;. Como mostrado na figura 1, os cubos e argolas representam Pokéstops e as plataformas suspensas são os ginásios.
 
-![](https://github.com/lnncrs/PoGym/blob/master/docs/images/screen.jpg?raw=true)
-### Figura 1 - Captura de tela de um dos membros do grupo no parque do Ibirapuera, na região de SP.
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/screen1.jpg?raw=true "Figura 1 - Captura de tela de um dos membros do grupo no parque do Ibirapuera, na região de SP.")
+Figura 1 - Captura de tela de um dos membros do grupo no parque do Ibirapuera, na região de SP.
 
  As criaturas chamadas de Pokémons aparecem de maneira aleatória em diferentes locais, com diferentes distribuições populacionais de acordo a região. Elas podem ser pegas arremessando os itens chamados &quot;pokébolas&quot;, arrastando-os através do &quot;touch screen&quot; do celular. Esse é o único momento do jogo no qual se tem a opção de se utilizar a realidade aumentada na câmera, como mostrado na figura 2.
 
-### Figura 2 - Imagem de divulgação do momento de captura utilizando realidade aumentada. [1]
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/screen2.jpg?raw=true)
+Figura 2 - Imagem de divulgação do momento de captura utilizando realidade aumentada. [1]
 
 Os Pokémons podem ser capturados, sair de ovos ou ser evoluídos de outros pré-existentes, além de poderem ser utilizados em batalhas com o intuito de dominar ginásios. A mecânica de batalha é bem simples, pode-se escolher até seis Pokémons para batalhar contra Pokémons que pertencem aos treinadores do ginásio (cada treinador só pode colocar um único Pokémon por ginásio, o limite é de 10 Pokémons por ginásio), como mostrado na figura 3 e 4. Cada vitória dos desafiantes do ginásio implica na perda de pontos do mesmo, que são indicados por níveis, ao chegar no nível zero o ginásio fica vago e qualquer um pode tomá-lo, tornando-se um treinador de ginasio.
 
-### Figura 3 - Imagem da tela de escolha dos 6 Pokémons para batalhar pelo estádio[2].
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/Pokemon-Go-Gym-Battle-(5).jpg?raw=true)
+Figura 3 - Imagem da tela de escolha dos 6 Pokémons para batalhar pelo estádio[2].
 
-### Figura 4 - Imagem de um ginásio ao lado de duas imagens de batalha, entre dois tipos distintos de Pokémon[3].
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/pokemon-go-gym-fight.jpg?raw=true)
+Figura 4 - Imagem de um ginásio ao lado de duas imagens de batalha, entre dois tipos distintos de Pokémon[3].
 
 ## Mecânica de batalha
 
 Apesar de historicamente os jogos da série Pokémon terem seu nicho principal no público infantil ou infanto-juvenil, o que normalmente implica em jogos mais simplificados, existe na série Pokémon uma complexidade adicional, geralmente utilizada por jogadores mais avançados, que explora as vantagens e desvantagens a respeito de determinados tipos de Pokémon como mostrado na figura 5.
 
-### Figura 5 - Tabela de multiplicadores de tipo, deve ser lida no sentido do atacante (lados) para defensores (alto e baixo) [4].
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/type-chart-gamepress.png?raw=true)
+Figura 5 - Tabela de multiplicadores de tipo, deve ser lida no sentido do atacante (lados) para defensores (alto e baixo) [4].
 
 Existem 151 tipos de Pokémon diferentes na primeira geração do desenho animado, destes somente 145 são utilizáveis no &quot;Pokémon Go&quot;. Cada um deles pertence a um ou mais tipos, como &quot;Fogo&quot; ou &quot;Água&quot; e cada tipo tem vantagens ou desvantagens em relação a outros tipos específicos, que são combinadas quando o Pokémon tem mais de um tipo.
 
 No caso do Pokémon número 62, por exemplo, de nome &quot;Poliwrath&quot; e que tem dois tipos &quot;Água&quot; e &quot;Lutador&quot; pode-se gerar a tabela de multiplicadores mostrada na figura 6.
 
-## Figura 6 - Imagem do Pokémon 62, &quot;Poliwrath&quot; e sua tabela de multiplicadores [5].
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/Poliwrath.jpg?raw=true)
+Figura 6 - Imagem do Pokémon 62, &quot;Poliwrath&quot; e sua tabela de multiplicadores [5].
 
 A jogabilidade durante a batalha é bem limitada, onde é necessário tocar repetidamente na tela para usar o ataque simples, segurar a tela para utilizar um ataque especial ou deslizar o dedo sobre a tela para realizar um movimento de esquiva. Os dois ataques de cada Pokémon também têm cada um seu tipo e não necessariamente são os mesmos do Pokémon em si. Sendo assim, o que determina a vitória são basicamente quatro fatores:
 
@@ -84,7 +89,11 @@ Será criado uma estrutura de banco de dados com o intuito de quedados 6 Pokémo
 
  Esses dados serão importados do site [6] na forma de dados colaborativos com scripts em Python. A ferramenta utilizará uma interface HTML5 para facilitar o uso e acesso do usuário aos dados, um protótipo é mostrado na figura 7.
 
-### Figura 7 - Imagem conceitual da ferramenta com os Pokémon selecionados.
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/pogym3.jpg?raw=true)
+Figura 7 - Imagem conceitual da ferramenta com os Pokémon selecionados.
+
+![](https://github.com/lnncrs/PoGym/blob/master/docs/images/pogym4.jpg?raw=true)
+Figura 8 - Imagem final da ferramenta atual em uso.
 
 ## Análise de Requisitos
 
@@ -117,16 +126,9 @@ A realização do projeto foi possível devido à complexidade adicional present
 
 ## Referências
 
-- [1] Pokémon GO com realidade aumentada - [https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt\_BR](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR) [. Acesso em](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR) [: 19/10/2016.](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR)
-
-- [2] Tela de escolha dos Pokémons em batalha - [http://says.com/ph/fun/15-tips-to-become-the-best-filipino-pokemon-master-in-no-time](http://says.com/ph/fun/15-tips-to-become-the-best-filipino-pokemon-master-in-no-time) [.](http://says.com/ph/fun/15-tips-to-become-the-best-filipino-pokemon-master-in-no-time) [Acesso em: 19/10/2016](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR)
-
-- [3] Imagens em um ginásio - [http://ayobuka.com/2016/07/12/ini-dia-cara-cepat-naik-level-di-pokemon-go/](http://ayobuka.com/2016/07/12/ini-dia-cara-cepat-naik-level-di-pokemon-go/) [.](http://ayobuka.com/2016/07/12/ini-dia-cara-cepat-naik-level-di-pokemon-go/) [Acesso em: 19/10/2016](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR)
-
-- [4] Tabela de multiplicadores de tipo - [https://pokemongo.gamepress.gg/pokemon-type-chart-strengths-weakness](https://pokemongo.gamepress.gg/pokemon-type-chart-strengths-weakness) [.](https://pokemongo.gamepress.gg/pokemon-type-chart-strengths-weakness)
-
-[ ](https://pokemongo.gamepress.gg/pokemon-type-chart-strengths-weakness) [Acesso em: 19/10/2016](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR).
-
-- [5] Tabela de multiplicadores para o pokémon 62 - [https://pokemongo.gamepress.gg/pokemon/62](https://pokemongo.gamepress.gg/pokemon/62). [Acesso em: 19/10/2016](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR).
-
-- [6] GamePress - [https://pokemongo.gamepress.gg/](https://pokemongo.gamepress.gg/) [.](https://pokemongo.gamepress.gg/) [Acesso em: 19/10/2016](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&amp;hl=pt_BR).
+- [1] Pokémon GO com realidade aumentada - [https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR). Acesso em: 19/10/2016.
+- [2] Tela de escolha dos Pokémons em batalha - [http://says.com/ph/fun/15-tips-to-become-the-best-filipino-pokemon-master-in-no-time](http://says.com/ph/fun/15-tips-to-become-the-best-filipino-pokemon-master-in-no-time). Acesso em: 19/10/2016.
+- [3] Imagens em um ginásio - [http://ayobuka.com/2016/07/12/ini-dia-cara-cepat-naik-level-di-pokemon-go/](http://ayobuka.com/2016/07/12/ini-dia-cara-cepat-naik-level-di-pokemon-go/). Acesso em: 19/10/2016].
+- [4] Tabela de multiplicadores de tipo - [https://pokemongo.gamepress.gg/pokemon-type-chart-strengths-weakness](https://pokemongo.gamepress.gg/pokemon-type-chart-strengths-weakness). Acesso em: 19/10/2016.
+- [5] Tabela de multiplicadores para o pokémon 62 - [https://pokemongo.gamepress.gg/pokemon/62](https://pokemongo.gamepress.gg/pokemon/62). Acesso em: 19/10/2016.
+- [6] GamePress - [https://pokemongo.gamepress.gg/](https://pokemongo.gamepress.gg/). Acesso em: 19/10/2016.
