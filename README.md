@@ -1,4 +1,4 @@
-# PoGym - Ferramenta auxiliar para batalhas no jogo "Pokemon Go"
+# Ferramenta auxiliar para batalhas no jogo "Pokemon Go"
 
 **Web based data tool for Pokemon Go battles. UFABC 3Q/2016 - Database Class.**
 
