@@ -1,13 +1,12 @@
-# PoGym -  ferramenta auxiliar para batalhas no jogo &quot;Pokemon Go&quot;**
+# PoGym -  ferramenta auxiliar para batalhas no jogo "Pokemon Go"
 
 Universidade Federal do ABC
-Bacharelado em Ciência da Computação – Banco de Dados (MC 3310) 2016 Q3
+
+Bacharelado em Ciência da Computação - Banco de Dados (MC 3310) 2016 Q3
 
 Felipe Rigo Yoshimura,Lenin Cristi,Renato de Rezende Querino,Victor Fernandes
 
 19/10/2016
-
-
 
 ## Objetivo
 
