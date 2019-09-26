@@ -1,4 +1,4 @@
-# PoGym -  ferramenta auxiliar para batalhas no jogo "Pokemon Go"
+# PoGym - Ferramenta auxiliar para batalhas no jogo "Pokemon Go"
 
 Universidade Federal do ABC
 
